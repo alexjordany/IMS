@@ -1,0 +1,40 @@
+﻿@page "/counter"
+
+@inject IMediator _mediator
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private int currentCount = 0;
+
+    //protected override async Task OnInitializedAsync(string name)
+    //{
+    //    var dtos = await _mediator.Send(new ViewInventoriesByNameQuery{Name = name});
+    //    //ViewInventoriesByNameQuery viewInventoriesByNameQuery = new ViewInventoriesByNameQuery() { Name = name };
+    //    //var dtos = await _mediator.Send(viewInventoriesByNameQuery);
+    //    return dt;
+    //}
+
+    //protected override async Task OnInitializedAsync()
+    //{
+    //    var dtos = await _mediator.Send(new ViewInventoriesByNameQuery{ Name = "" });
+
+    //}
+
+    protected override async Task<ActionResult<List<ViewInventoriesByNameVM>>> OnInitializedAsync()
+    {
+        var dtos = await _mediator.Send(new ViewInventoriesByNameQuery{ Name = "ngi" });
+        return dtos;
+    }
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}

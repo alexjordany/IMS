@@ -1,0 +1,17 @@
+C:\Users\alexj\source\repos\IMS\IMS.Persistence\bin\Debug\net6.0\IMS.Persistence.deps.json
+C:\Users\alexj\source\repos\IMS\IMS.Persistence\bin\Debug\net6.0\IMS.Persistence.dll
+C:\Users\alexj\source\repos\IMS\IMS.Persistence\bin\Debug\net6.0\IMS.Persistence.pdb
+C:\Users\alexj\source\repos\IMS\IMS.Persistence\bin\Debug\net6.0\IMS.Application.dll
+C:\Users\alexj\source\repos\IMS\IMS.Persistence\bin\Debug\net6.0\IMS.Domain.dll
+C:\Users\alexj\source\repos\IMS\IMS.Persistence\bin\Debug\net6.0\IMS.Application.pdb
+C:\Users\alexj\source\repos\IMS\IMS.Persistence\bin\Debug\net6.0\IMS.Domain.pdb
+C:\Users\alexj\source\repos\IMS\IMS.Persistence\obj\Debug\net6.0\IMS.Persistence.csproj.AssemblyReference.cache
+C:\Users\alexj\source\repos\IMS\IMS.Persistence\obj\Debug\net6.0\IMS.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexj\source\repos\IMS\IMS.Persistence\obj\Debug\net6.0\IMS.Persistence.AssemblyInfoInputs.cache
+C:\Users\alexj\source\repos\IMS\IMS.Persistence\obj\Debug\net6.0\IMS.Persistence.AssemblyInfo.cs
+C:\Users\alexj\source\repos\IMS\IMS.Persistence\obj\Debug\net6.0\IMS.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\alexj\source\repos\IMS\IMS.Persistence\obj\Debug\net6.0\IMS.Persistence.csproj.CopyComplete
+C:\Users\alexj\source\repos\IMS\IMS.Persistence\obj\Debug\net6.0\IMS.Persistence.dll
+C:\Users\alexj\source\repos\IMS\IMS.Persistence\obj\Debug\net6.0\refint\IMS.Persistence.dll
+C:\Users\alexj\source\repos\IMS\IMS.Persistence\obj\Debug\net6.0\IMS.Persistence.pdb
+C:\Users\alexj\source\repos\IMS\IMS.Persistence\obj\Debug\net6.0\ref\IMS.Persistence.dll
