@@ -14,12 +14,7 @@ namespace IMS.Persistence.Repositories
 
         public async Task<IEnumerable<Inventory>> GetInventoriesByName(string name)
         {
-            //var inventoriesByName = await _dbContext.Inventories.Where(x=> x.InventoryName.Contains(name)).ToListAsync();
-            //return inventoriesByName;
-
-
-            //return await _dbContext.Inventories.Where(x=> x.InventoryName.Contains(name) || string.IsNullOrWhiteSpace(name)).ToListAsync();
-            var inventoriesByName = await _dbContext.Inventories.Where(x => x.InventoryName.Contains(name) || string.IsNullOrWhiteSpace(name)).ToListAsync();
+            var inventoriesByName = await _dbContext.Inventories.Where(x => x.InventoryName.Contains(name, StringComparison.OrdinalIgnoreCase) || string.IsNullOrWhiteSpace(name)).ToListAsync();
             return inventoriesByName;
         }
     }

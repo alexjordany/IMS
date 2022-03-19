@@ -1,0 +1,18 @@
+﻿@inject IMediator _mediator
+
+<div class="input-group mb-3">
+    <input type="text" class="form-control form-control-lg" placeholder="Type inventory name here to search" @bind-value="inventoryNameToSearch"/>
+    <button type="button" class="input-group-text btn-outline-dark" @onclick="@(async()=> {await ViewInventories();})">View</button>
+</div>
+<br />
+
+
+@code {
+    private string? inventoryNameToSearch;
+
+    private async Task<ActionResult<List<ViewInventoriesByNameVM>>> ViewInventories()
+    {
+        var model = await _mediator.Send(new ViewInventoriesByNameQuery{ Name = inventoryNameToSearch });
+        return model;
+    }
+}
