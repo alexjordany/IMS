@@ -4,15 +4,17 @@
     <input type="text" class="form-control form-control-lg" placeholder="Type inventory name here to search" @bind-value="inventoryNameToSearch"/>
     <button type="button" class="input-group-text btn-outline-dark" @onclick="@(async()=> {await ViewInventories();})">View</button>
 </div>
-<br />
-
 
 @code {
     private string? inventoryNameToSearch;
 
+    [Parameter]
+    public EventCallback<List<ViewInventoriesByNameVM>> OnSearchInventories{ get; set; }
+
     private async Task<ActionResult<List<ViewInventoriesByNameVM>>> ViewInventories()
     {
         var model = await _mediator.Send(new ViewInventoriesByNameQuery{ Name = inventoryNameToSearch });
+        await OnSearchInventories.InvokeAsync(model);
         return model;
     }
 }
