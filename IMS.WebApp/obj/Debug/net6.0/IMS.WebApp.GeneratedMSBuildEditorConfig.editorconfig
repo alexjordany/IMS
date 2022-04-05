@@ -31,12 +31,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/alexj/source/repos/IMS/IMS.WebApp/Pages/Inventories/Commands/CreateInventory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3JpZXNcQ29tbWFuZHNcQ3JlYXRlSW52ZW50b3J5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/alexj/source/repos/IMS/IMS.WebApp/Pages/Inventories/Controls/ViewInventoriesComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3JpZXNcQ29udHJvbHNcVmlld0ludmVudG9yaWVzQ29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alexj/source/repos/IMS/IMS.WebApp/Pages/Inventories/InventoryList.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3JpZXNcSW52ZW50b3J5TGlzdC5yYXpvcg==
+[C:/Users/alexj/source/repos/IMS/IMS.WebApp/Pages/Inventories/Queries/InventoryList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3JpZXNcUXVlcmllc1xJbnZlbnRvcnlMaXN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/alexj/source/repos/IMS/IMS.WebApp/Shared/LoginDisplay.razor]

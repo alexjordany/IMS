@@ -8,6 +8,10 @@ C:\Users\alexj\source\repos\IMS\IMS.WebApp\bin\Debug\net6.0\IMS.WebApp.dll
 C:\Users\alexj\source\repos\IMS\IMS.WebApp\bin\Debug\net6.0\IMS.WebApp.pdb
 C:\Users\alexj\source\repos\IMS\IMS.WebApp\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\alexj\source\repos\IMS\IMS.WebApp\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\alexj\source\repos\IMS\IMS.WebApp\bin\Debug\net6.0\Blazored.FluentValidation.dll
+C:\Users\alexj\source\repos\IMS\IMS.WebApp\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\alexj\source\repos\IMS\IMS.WebApp\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\alexj\source\repos\IMS\IMS.WebApp\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\alexj\source\repos\IMS\IMS.WebApp\bin\Debug\net6.0\Humanizer.dll
 C:\Users\alexj\source\repos\IMS\IMS.WebApp\bin\Debug\net6.0\MediatR.dll
 C:\Users\alexj\source\repos\IMS\IMS.WebApp\bin\Debug\net6.0\MediatR.Contracts.dll

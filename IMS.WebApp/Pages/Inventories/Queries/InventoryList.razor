@@ -1,4 +1,7 @@
 ﻿@page "/inventories"
+
+@inject IMediator _mediator;
+@inject NavigationManager _navigationManager
 <h3>InventoryList</h3>
 <br />
 <ViewInventoriesComponent OnSearchInventories="OnSearchInventories"></ViewInventoriesComponent>
@@ -30,10 +33,26 @@
     </table>
 }
 
+<br />
+
+<button type="button" class="btn btn-primary" @onclick="CreateInventory">Add Inventory</button>
+
 @code {
     private List<ViewInventoriesByNameVM> _inventories;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var model = await _mediator.Send(new ViewInventoriesByNameQuery{ Name = "" });
+        _inventories = model;
+    }
+
     private void OnSearchInventories(List<ViewInventoriesByNameVM> inventories)
     {
         _inventories = inventories;
+    }
+
+    private void CreateInventory()
+    {
+        _navigationManager.NavigateTo("/createinventory");
     }
 }
