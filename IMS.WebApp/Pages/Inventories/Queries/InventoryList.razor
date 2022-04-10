@@ -25,7 +25,7 @@
                     <td>@inv.Quantity</td>
                     <td>@inv.Price.ToString("c")</td>
                     <td>
-                        <button type="button" class="btn btn-light">Edit</button>
+                        <button type="button" class="btn btn-light" @onclick="@(()=> UpdateInventory(inv.InventoryId))">Edit</button>
                     </td>
                 </tr>
             }
@@ -54,5 +54,10 @@
     private void CreateInventory()
     {
         _navigationManager.NavigateTo("/createinventory");
+    }
+
+    private void UpdateInventory(int invId)
+    {
+        _navigationManager.NavigateTo($"/updateinventory/{invId}");
     }
 }

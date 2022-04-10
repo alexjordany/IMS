@@ -5,12 +5,12 @@ using MediatR;
 
 namespace IMS.Application.Features.Inventories.Commands.CreateInventory;
 
-public class CreateInventoryHandler : IRequestHandler<CreateInventoryCommand,int>
+public class CreateInventoryCommandHandler : IRequestHandler<CreateInventoryCommand,int>
 {
     private readonly IInventoryRepository _inventoryRepository;
     private readonly IMapper _mapper;
 
-    public CreateInventoryHandler(IInventoryRepository inventoryRepository, IMapper mapper)
+    public CreateInventoryCommandHandler(IInventoryRepository inventoryRepository, IMapper mapper)
     {
         _inventoryRepository = inventoryRepository;
         _mapper = mapper;
