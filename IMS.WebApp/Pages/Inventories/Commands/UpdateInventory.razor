@@ -1,12 +1,13 @@
 ﻿@page "/updateinventory/{invId:int}"
 @using IMS.Application.Features.Inventories.Queries.GetInventoryDetail
 @inject IMediator _mediator;
+@inject NavigationManager _navigationManager
 
 <h3>Update Inventory</h3>
 <br />
 @if (inventory != null)
 {
-    <EditForm Model="inventory">
+    <EditForm Model="inventory" OnValidSubmit="OnValidSubmit">
         <FluentValidationValidator></FluentValidationValidator>
         <ValidationSummary></ValidationSummary>
 
@@ -37,19 +38,20 @@
 
     protected override async Task OnInitializedAsync()
     {
-        //inventory = new ViewInventoriesByIdQuery() { Id = InvId };
-        //await _mediator.Send(getInventory);
         var model = await _mediator.Send(new GetInventoryDetailQuery{Id = InvId});
         inventory = model;
-
     }
 
-    //var model = await _mediator.Send(new ViewInventoriesByNameQuery{ Name = "" });
-    //    _inventories = model;
+    public async Task OnValidSubmit()
+    {
+        if(inventory != null)
+        {
+            await _mediator.Send(new UpdateInventoryCommand 
+            { InventoryId = inventory.InventoryId, InventoryName = inventory.InventoryName, Price = inventory.Price, Quantity = inventory.Quantity });
+            _navigationManager.NavigateTo("/inventories");
+        }
+        
+            
 
-    //public async Task OnValidSubmit()
-    //{
-    //    if(inventory != null)
-    //        await _mediator.Send(inventory);
-    //}
+    }
 }
