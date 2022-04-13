@@ -1,4 +1,7 @@
 ﻿using FluentValidation;
+using IMS.Application.Features.Inventories.Queries.ViewInventoriesByName;
+using IMS.Domain.Entities;
+using MediatR;
 
 namespace IMS.Application.Features.Inventories.Commands.CreateInventory;
 

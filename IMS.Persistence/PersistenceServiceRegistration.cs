@@ -17,6 +17,7 @@ public static class PersistenceServiceRegistration
         services.AddScoped(typeof(IAsyncRepository<>), typeof(BaseRepository<>));
 
         services.AddScoped<IInventoryRepository, InventoryRepository>();
+        services.AddScoped<IProductRepository, ProductRepository>();
 
         return services;
     }

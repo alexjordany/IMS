@@ -1,0 +1,64 @@
+﻿@page "/products"
+
+@inject IMediator _mediator;
+@inject NavigationManager _navigationManager
+
+<h3>Products List</h3>
+<br />
+
+<GetProductsComponent OnSearchProducts="OnSearchProducts"></GetProductsComponent>
+
+@if(_products != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var product in this._products)
+            {
+                <tr>
+                    <td>@product.ProductName</td>
+                    <td>@product.Quantity</td>
+                    <td>@product.Price.ToString("c")</td>
+                    <td>
+                        <button type="button" class="btn btn-light" @onclick="@(()=> UpdateProduct(product.ProductId))">Edit</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<GetProductsByNameVM> _products;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var model = await _mediator.Send(new GetProductsByNameQuery { Name = "" });
+        _products = model;
+    }
+
+    private void OnSearchProducts(List<GetProductsByNameVM> products)
+    {
+        _products = products;
+    }
+
+    private void CreateProduct()
+    {
+        _navigationManager.NavigateTo("/createproduct");
+    }
+
+    private void UpdateProduct(int productId)
+    {
+        _navigationManager.NavigateTo($"/updateproduct/{productId}");
+    }
+
+    
+
+}

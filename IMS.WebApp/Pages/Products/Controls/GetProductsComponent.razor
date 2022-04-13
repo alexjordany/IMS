@@ -1,0 +1,21 @@
+﻿@using IMS.Application.Features.Products.Queries.GetProductsByName
+@inject IMediator _mediator
+
+<div class="input-group mb-3">
+    <input type="text" class="form-control form-control-lg" placeholder="type here the name of the product to search" @bind-value="productNameToSearch"/>
+    <button type="button" class="input-group-text btn-outline-dark" @onclick="@(async()=> {await GetProducts();})">View</button>
+</div>
+
+@code {
+    private string? productNameToSearch;
+
+    [Parameter]
+    public EventCallback<List<GetProductsByNameVM>> OnSearchProducts{ get; set; }
+
+    private async Task<ActionResult<List<GetProductsByNameVM>>> GetProducts()
+    {
+        var model = await _mediator.Send(new GetProductsByNameQuery { Name = productNameToSearch });
+        await OnSearchProducts.InvokeAsync(model);
+        return model;
+    }
+}

@@ -85,3 +85,14 @@ C:\Users\alexj\source\repos\IMS\IMS.WebApp\obj\Debug\net6.0\refint\IMS.WebApp.dl
 C:\Users\alexj\source\repos\IMS\IMS.WebApp\obj\Debug\net6.0\IMS.WebApp.pdb
 C:\Users\alexj\source\repos\IMS\IMS.WebApp\obj\Debug\net6.0\IMS.WebApp.genruntimeconfig.cache
 C:\Users\alexj\source\repos\IMS\IMS.WebApp\obj\Debug\net6.0\ref\IMS.WebApp.dll
+C:\Users\alexj\source\repos\IMS\IMS.WebApp\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\alexj\source\repos\IMS\IMS.WebApp\bin\Debug\net6.0\Microsoft.AspNetCore.Components.dll
+C:\Users\alexj\source\repos\IMS\IMS.WebApp\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\alexj\source\repos\IMS\IMS.WebApp\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\alexj\source\repos\IMS\IMS.WebApp\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\alexj\source\repos\IMS\IMS.WebApp\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\alexj\source\repos\IMS\IMS.WebApp\bin\Debug\net6.0\Microsoft.Fast.Components.FluentUI.dll
+C:\Users\alexj\source\repos\IMS\IMS.WebApp\bin\Debug\net6.0\Microsoft.JSInterop.dll
+C:\Users\alexj\source\repos\IMS\IMS.WebApp\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\alexj\source\repos\IMS\IMS.WebApp\obj\Debug\net6.0\jsmodules\jsmodules.build.manifest.json
+C:\Users\alexj\source\repos\IMS\IMS.WebApp\bin\Debug\net6.0\libman.json
