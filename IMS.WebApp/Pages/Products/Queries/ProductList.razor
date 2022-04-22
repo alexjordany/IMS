@@ -27,7 +27,7 @@
                     <td>@product.Quantity</td>
                     <td>@product.Price.ToString("c")</td>
                     <td>
-                        <button type="button" class="btn btn-light" @onclick="@(()=> UpdateProduct(product.ProductId))">Edit</button>
+                        <FluentButton Appearance=Appearance.Stealth @onclick="@(()=> UpdateProduct(product.ProductId))">Edit</FluentButton>
                     </td>
                 </tr>
             }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "L/ldpdyFauJl0TXMeZvlZCqVUuS9Eh0rtat/Slp2u85Ltj6axqImEq7B03cnHGRIIq0d8dsO7Hep49iti74bwQ==",
+  "dgSpecHash": "TaQUZtcUClYKduy9noZZtxmPgYpCz1wt6OQ20lfbYvln7wPWJgkE9yj9lR8HrDNEYNZPmVT+tEpPQnN/Uspg6Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\alexj\\source\\repos\\IMS\\IMS.WebApp\\IMS.WebApp.csproj",
   "expectedPackageFiles": [
@@ -49,7 +49,7 @@
     "C:\\Users\\alexj\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
     "C:\\Users\\alexj\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\alexj\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
-    "C:\\Users\\alexj\\.nuget\\packages\\microsoft.fast.components.fluentui\\1.2.1\\microsoft.fast.components.fluentui.1.2.1.nupkg.sha512",
+    "C:\\Users\\alexj\\.nuget\\packages\\microsoft.fast.components.fluentui\\1.3.0\\microsoft.fast.components.fluentui.1.3.0.nupkg.sha512",
     "C:\\Users\\alexj\\.nuget\\packages\\microsoft.identity.client\\4.21.1\\microsoft.identity.client.4.21.1.nupkg.sha512",
     "C:\\Users\\alexj\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.8.0\\microsoft.identitymodel.jsonwebtokens.6.8.0.nupkg.sha512",
     "C:\\Users\\alexj\\.nuget\\packages\\microsoft.identitymodel.logging\\6.8.0\\microsoft.identitymodel.logging.6.8.0.nupkg.sha512",

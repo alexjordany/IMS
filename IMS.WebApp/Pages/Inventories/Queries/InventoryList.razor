@@ -1,12 +1,9 @@
 ﻿@page "/inventories"
-
 @inject IMediator _mediator;
 @inject NavigationManager _navigationManager
-@using Microsoft.Fast.Components.FluentUI
-<h3>InventoryList</h3>
+<h3>Inventory List</h3>
 <br />
 <ViewInventoriesComponent OnSearchInventories="OnSearchInventories"></ViewInventoriesComponent>
-
 @if(_inventories != null)
 {
     <table class="table">
@@ -26,7 +23,7 @@
                     <td>@inv.Quantity</td>
                     <td>@inv.Price.ToString("c")</td>
                     <td>
-                        <button type="button" class="btn btn-light" @onclick="@(()=> UpdateInventory(inv.InventoryId))">Edit</button>
+                        <FluentButton Appearance=Appearance.Outline @onclick="@(()=> UpdateInventory(inv.InventoryId))">Edit</FluentButton>
                     </td>
                 </tr>
             }
@@ -36,7 +33,10 @@
 
 <br />
 
-<button type="button" class="btn btn-primary" @onclick="CreateInventory">Add Inventory</button>
+<FluentButton Appearance=Appearance.Accent @onclick="CreateInventory">Add Inventory</FluentButton>
+
+
+
 
 @code {
     private List<ViewInventoriesByNameVM> _inventories;

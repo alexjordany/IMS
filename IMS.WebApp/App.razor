@@ -1,8 +1,8 @@
 ﻿<CascadingAuthenticationState>
+<FluentDesignSystemProvider AccentBaseColor="#009CA8" BaseLayerLuminance="1">
     <Router AppAssembly="@typeof(App).Assembly">
         <Found Context="routeData">
-            <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
-            <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+            <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
         </Found>
         <NotFound>
             <PageTitle>Not found</PageTitle>
@@ -11,4 +11,7 @@
             </LayoutView>
         </NotFound>
     </Router>
+</FluentDesignSystemProvider>
 </CascadingAuthenticationState>
+
+
