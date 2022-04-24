@@ -5,16 +5,45 @@
     <FluentButton Appearance=Appearance.Outline @onclick="@(async()=> {await ViewInventories();})">View</FluentButton>
 </div>
 
+@if (this.DisplaySearchResult && _inventories != null && selectedInventory == null)
+{
+        <FluentListbox Value=1>
+            @foreach (var inv in _inventories)
+            {
+                <FluentOption Selected="false" @onclick="@(async() => {await SelectInventory(inv);})" @key="inv.InventoryId">@inv.InventoryName</FluentOption>
+                <FluentDivider></FluentDivider>
+                
+            }
+        </FluentListbox>
+
+}
+
 @code {
     private string? inventoryNameToSearch;
+    private List<ViewInventoriesByNameVM> _inventories;
+    private ViewInventoriesByNameVM? selectedInventory;
 
     [Parameter]
     public EventCallback<List<ViewInventoriesByNameVM>> OnSearchInventories{ get; set; }
+
+    [Parameter]
+    public EventCallback<ViewInventoriesByNameVM> OnSelectInventory { get; set; }
+
+    [Parameter]
+    public bool DisplaySearchResult { get; set; } = false;
 
     private async Task<ActionResult<List<ViewInventoriesByNameVM>>> ViewInventories()
     {
         var model = await _mediator.Send(new ViewInventoriesByNameQuery{ Name = inventoryNameToSearch });
         await OnSearchInventories.InvokeAsync(model);
+        _inventories = model;
+        this.selectedInventory = null;
         return model;
+    }
+
+    private async Task SelectInventory(ViewInventoriesByNameVM inventory)
+    {
+        await OnSelectInventory.InvokeAsync(inventory);
+        selectedInventory = inventory;
     }
 }

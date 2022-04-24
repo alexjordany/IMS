@@ -4,32 +4,19 @@
 <h3>Inventory List</h3>
 <br />
 <ViewInventoriesComponent OnSearchInventories="OnSearchInventories"></ViewInventoriesComponent>
-@if(_inventories != null)
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Quantity</th>
-                <th>Price</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach(var inv in this._inventories)
-            {
-                <tr>
-                    <td>@inv.InventoryName</td>
-                    <td>@inv.Quantity</td>
-                    <td>@inv.Price.ToString("c")</td>
-                    <td>
-                        <FluentButton Appearance=Appearance.Outline @onclick="@(()=> UpdateInventory(inv.InventoryId))">Edit</FluentButton>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
+
+<FluentDataGrid TItem=string GenerateHeader=GenerateHeaderOptions.None GridTemplateColumns="1fr 1fr 1fr 2fr">
+    <FluentDataGridRow TItem=string RowType=DataGridRowType.Header >
+        <FluentDataGridCell GridColumn=1 CellType=DataGridCellType.ColumnHeader>Name</FluentDataGridCell>
+        <FluentDataGridCell GridColumn=2 CellType=DataGridCellType.ColumnHeader>Quantity</FluentDataGridCell>
+        <FluentDataGridCell GridColumn=3 CellType=DataGridCellType.ColumnHeader>Price</FluentDataGridCell>
+        <FluentDataGridCell GridColumn=4 CellType=DataGridCellType.ColumnHeader>Options</FluentDataGridCell>
+    </FluentDataGridRow>
+    @foreach (var inv in this._inventories)
+        {
+            <InventoryItemComponent Inventory="inv"></InventoryItemComponent>
+        }
+</FluentDataGrid>
 
 <br />
 
@@ -55,10 +42,5 @@
     private void CreateInventory()
     {
         _navigationManager.NavigateTo("/createinventory");
-    }
-
-    private void UpdateInventory(int invId)
-    {
-        _navigationManager.NavigateTo($"/updateinventory/{invId}");
     }
 }

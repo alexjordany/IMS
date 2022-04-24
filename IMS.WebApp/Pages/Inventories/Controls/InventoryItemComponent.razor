@@ -1,0 +1,23 @@
+﻿@inject NavigationManager _navigationManager
+
+@if(Inventory != null)
+{
+    <FluentDataGridRow TItem=string>
+        <FluentDataGridCell GridColumn=1>@Inventory.InventoryName</FluentDataGridCell>
+        <FluentDataGridCell GridColumn=2>@Inventory.Quantity</FluentDataGridCell>
+        <FluentDataGridCell GridColumn=3>@Inventory.Price.ToString("c")</FluentDataGridCell>
+        <FluentDataGridCell GridColumn=4>
+            <FluentButton Appearance=Appearance.Outline @onclick="@(()=> UpdateInventory(Inventory.InventoryId))">Edit</FluentButton>
+        </FluentDataGridCell>
+    </FluentDataGridRow>
+}
+
+@code {
+    [Parameter]
+    public ViewInventoriesByNameVM Inventory{ get; set; }
+
+    private void UpdateInventory(int invId)
+    {
+        _navigationManager.NavigateTo($"/updateinventory/{invId}");
+    }
+}
