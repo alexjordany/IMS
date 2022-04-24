@@ -8,32 +8,21 @@
 
 <GetProductsComponent OnSearchProducts="OnSearchProducts"></GetProductsComponent>
 
-@if(_products != null)
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Quantity</th>
-                <th>Price</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach(var product in this._products)
-            {
-                <tr>
-                    <td>@product.ProductName</td>
-                    <td>@product.Quantity</td>
-                    <td>@product.Price.ToString("c")</td>
-                    <td>
-                        <FluentButton Appearance=Appearance.Stealth @onclick="@(()=> UpdateProduct(product.ProductId))">Edit</FluentButton>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
+<FluentDataGrid TItem=string GenerateHeader=GenerateHeaderOptions.None GridTemplateColumns="1fr 0.8fr 1fr 1fr 0.9fr">
+    <FluentDataGridRow TItem=string RowType=DataGridRowType.Header>
+        <FluentDataGridCell GridColumn=1 CellType=DataGridCellType.ColumnHeader>Name</FluentDataGridCell>
+        <FluentDataGridCell GridColumn=2 CellType=DataGridCellType.ColumnHeader>Quantity</FluentDataGridCell>
+        <FluentDataGridCell GridColumn=3 CellType=DataGridCellType.ColumnHeader>Price</FluentDataGridCell>
+        <FluentDataGridCell GridColumn=4 CellType=DataGridCellType.ColumnHeader>Options</FluentDataGridCell>
+        <FluentDataGridCell GridColumn=5 CellType=DataGridCellType.ColumnHeader></FluentDataGridCell>
+    </FluentDataGridRow>
+    <FluentDataGridRow TItem=string>
+        @foreach (var product in this._products)
+        {
+            <ProductItemComponent Product="product"></ProductItemComponent>
+        }
+    </FluentDataGridRow>
+</FluentDataGrid>
 
 @code {
     private List<GetProductsByNameVM> _products;
@@ -53,12 +42,5 @@
     {
         _navigationManager.NavigateTo("/createproduct");
     }
-
-    private void UpdateProduct(int productId)
-    {
-        _navigationManager.NavigateTo($"/updateproduct/{productId}");
-    }
-
-    
 
 }

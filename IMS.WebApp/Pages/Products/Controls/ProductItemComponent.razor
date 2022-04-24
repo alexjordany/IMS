@@ -1,0 +1,25 @@
+﻿@inject IMediator _mediator;
+@inject NavigationManager _navigationManager
+
+@if(Product != null)
+{
+    <FluentDataGridCell GridColumn=1 CellType=DataGridCellType.Default>@Product.ProductName</FluentDataGridCell>
+    <FluentDataGridCell GridColumn=2 CellType=DataGridCellType.Default>@Product.Quantity</FluentDataGridCell>
+    <FluentDataGridCell GridColumn=3 CellType=DataGridCellType.Default>@Product.Price</FluentDataGridCell>
+    <FluentSelect Value=2> 
+            <FluentOption>Choose an option for @Product.ProductName</FluentOption>
+            <FluentOption @onclick="@(()=> UpdateProduct(Product.ProductId))">Edit</FluentOption>
+    </FluentSelect>
+    
+}
+
+@code {
+
+    [Parameter]
+    public GetProductsByNameVM Product{ get; set; }
+
+    private void UpdateProduct(int productId)
+    {
+        _navigationManager.NavigateTo($"/updateproduct/{productId}");
+    }
+}
