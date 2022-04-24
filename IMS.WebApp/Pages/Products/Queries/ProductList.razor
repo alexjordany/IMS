@@ -8,20 +8,17 @@
 
 <GetProductsComponent OnSearchProducts="OnSearchProducts"></GetProductsComponent>
 
-<FluentDataGrid TItem=string GenerateHeader=GenerateHeaderOptions.None GridTemplateColumns="1fr 0.8fr 1fr 1fr 0.9fr">
-    <FluentDataGridRow TItem=string RowType=DataGridRowType.Header>
+<FluentDataGrid TItem=string GenerateHeader=GenerateHeaderOptions.None GridTemplateColumns="1fr 0.8fr 1fr 4fr">
+    <FluentDataGridRow TItem=string RowType=DataGridRowType.Header >
         <FluentDataGridCell GridColumn=1 CellType=DataGridCellType.ColumnHeader>Name</FluentDataGridCell>
         <FluentDataGridCell GridColumn=2 CellType=DataGridCellType.ColumnHeader>Quantity</FluentDataGridCell>
         <FluentDataGridCell GridColumn=3 CellType=DataGridCellType.ColumnHeader>Price</FluentDataGridCell>
         <FluentDataGridCell GridColumn=4 CellType=DataGridCellType.ColumnHeader>Options</FluentDataGridCell>
-        <FluentDataGridCell GridColumn=5 CellType=DataGridCellType.ColumnHeader></FluentDataGridCell>
     </FluentDataGridRow>
-    <FluentDataGridRow TItem=string>
-        @foreach (var product in this._products)
+    @foreach (var product in this._products)
         {
             <ProductItemComponent Product="product"></ProductItemComponent>
         }
-    </FluentDataGridRow>
 </FluentDataGrid>
 
 @code {
