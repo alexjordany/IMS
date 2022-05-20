@@ -9,9 +9,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Fast.Components.FluentUI;
+using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
 IConfiguration configuration = builder.Configuration;
+
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -26,6 +28,8 @@ builder.Services.AddHttpClient();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
 builder.Services.AddSingleton<WeatherForecastService>();
+builder.Services.AddLocalization();
+CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
 
 builder.Services.AddAplicationServices();
 builder.Services.AddPersistenceServices(configuration);

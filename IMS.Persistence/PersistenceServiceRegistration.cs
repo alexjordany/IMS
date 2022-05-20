@@ -13,6 +13,7 @@ public static class PersistenceServiceRegistration
         services.AddDbContext<IMSDbContext>(options =>
         {
             options.UseInMemoryDatabase("IMS");
+            options.EnableSensitiveDataLogging();
         });
         services.AddScoped(typeof(IAsyncRepository<>), typeof(BaseRepository<>));
 

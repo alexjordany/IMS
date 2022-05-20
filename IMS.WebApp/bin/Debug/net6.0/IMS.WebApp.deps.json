@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "IMS.WebApp/1.0.0": {
         "dependencies": {
+          "AutoMapper": "11.0.1",
           "Blazored.FluentValidation": "2.0.3",
           "IMS.Persistence": "1.0.0",
           "MediatR": "10.0.1",

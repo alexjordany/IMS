@@ -43,6 +43,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3JpZXNcQ29udHJvbHNcSW52ZW50b3J5SXRlbUNvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/alexj/source/repos/IMS/IMS.WebApp/Pages/Inventories/Controls/SearchInventoryComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3JpZXNcQ29udHJvbHNcU2VhcmNoSW52ZW50b3J5Q29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/alexj/source/repos/IMS/IMS.WebApp/Pages/Inventories/Controls/ViewInventoriesComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3JpZXNcQ29udHJvbHNcVmlld0ludmVudG9yaWVzQ29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -51,8 +55,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3JpZXNcUXVlcmllc1xJbnZlbnRvcnlMaXN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/alexj/source/repos/IMS/IMS.WebApp/Pages/Products/Commands/CreateProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcQ29tbWFuZHNcQ3JlYXRlUHJvZHVjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/alexj/source/repos/IMS/IMS.WebApp/Pages/Products/Controls/GetProductsComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcQ29udHJvbHNcR2V0UHJvZHVjdHNDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexj/source/repos/IMS/IMS.WebApp/Pages/Products/Controls/ProductInventoriesComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcQ29udHJvbHNcUHJvZHVjdEludmVudG9yaWVzQ29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/alexj/source/repos/IMS/IMS.WebApp/Pages/Products/Controls/ProductItemComponent.razor]

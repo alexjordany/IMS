@@ -1,7 +1,7 @@
 ﻿@inject IMediator _mediator
 
 <div class="input-group mb-3">
-    <FluentTextField Placeholder="Type inventory name here to search" Size=50 @bind-value="inventoryNameToSearch"></FluentTextField>
+    <FluentTextField @bind-value="inventoryNameToSearch" TextFieldType=TextFieldType.Text  Placeholder="Type inventory name here to search" Size=50></FluentTextField>
     <FluentButton Appearance=Appearance.Outline @onclick="@(async()=> {await ViewInventories();})">View</FluentButton>
 </div>
 

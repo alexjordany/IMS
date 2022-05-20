@@ -10,6 +10,14 @@ public class ProductRepository : BaseRepository<Product>, IProductRepository
     {
 
     }
+
+    public async Task<Product> AddProductAsync(Product product)
+    {
+        _dbContext.Products.Add(product);
+        await _dbContext.SaveChangesAsync();
+        return product;
+    }
+
     public async Task<IEnumerable<Product>> GetProductsByName(string name)
     {
         var productsByName = await _dbContext.Products.Where(x => x.ProductName.Contains(name, StringComparison.OrdinalIgnoreCase) || string.IsNullOrWhiteSpace(name)).ToListAsync();

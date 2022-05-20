@@ -14730,6 +14730,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "AutoMapper >= 11.0.1",
       "Blazored.FluentValidation >= 2.0.3",
       "IMS.Persistence >= 1.0.0",
       "MediatR >= 10.0.1",
@@ -14790,6 +14791,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[11.0.1, )"
+          },
           "Blazored.FluentValidation": {
             "target": "Package",
             "version": "[2.0.3, )"
@@ -14849,7 +14854,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

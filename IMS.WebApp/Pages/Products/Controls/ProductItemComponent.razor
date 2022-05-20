@@ -1,21 +1,19 @@
 ﻿@inject IMediator _mediator;
 @inject NavigationManager _navigationManager
 
-@if(Product != null)
+@if (Product != null)
 {
-    <FluentDataGridRow TItem=string style="height: 40px">
+    <FluentDataGridRow TItem=string style="height:55px;">
         <FluentDataGridCell GridColumn=1>@Product.ProductName</FluentDataGridCell>
         <FluentDataGridCell GridColumn=2>@Product.Quantity</FluentDataGridCell>
         <FluentDataGridCell GridColumn=3>@Product.Price.ToString("c")</FluentDataGridCell>
         <td>
             <FluentSelect Value=2 Appearance=Appearance.Accent>
-            <FluentOption>Choose an option for @Product.ProductName</FluentOption>
-            <FluentOption @onclick="@(()=> UpdateProduct(Product.ProductId))">Edit</FluentOption>
-        </FluentSelect>
+                <FluentOption>Choose an option for @Product.ProductName</FluentOption>
+                <FluentOption @onclick="@(()=> UpdateProduct(Product.ProductId))">Edit</FluentOption>
+            </FluentSelect>
         </td>
     </FluentDataGridRow>
-    
-    
 }
 
 @code {

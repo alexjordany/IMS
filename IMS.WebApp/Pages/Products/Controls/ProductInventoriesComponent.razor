@@ -1,0 +1,67 @@
+﻿@using IMS.Domain.Entities
+@using AutoMapper
+
+<div class="form-group">
+    <label>Inventories</label>
+    <SearchInventoryComponent DisplaySearchResult="true" OnSelectInventory="OnSelectInventory"></SearchInventoryComponent>
+</div>
+
+@if (productInventories != null && productInventories.Count > 0)
+{
+    <div style="width:550px;">
+        <fluent-data-grid grid-template-columns="1.5fr 1fr 1fr" generate-header="none">
+            <fluent-data-grid-row row-type="header">
+                <fluent-data-grid-cell grid-column="1" cell-type="columnheader">Name</fluent-data-grid-cell>
+                <fluent-data-grid-cell grid-column="2" cell-type="columnheader">Quantity</fluent-data-grid-cell>
+                <fluent-data-grid-cell grid-column="3" cell-type="columnheader">Options</fluent-data-grid-cell>
+            </fluent-data-grid-row>
+            @foreach (var productInventories in this.productInventories)
+            {
+                <fluent-data-grid-row>
+                    <fluent-data-grid-cell grid-column="1">@productInventories.Inventory.InventoryName</fluent-data-grid-cell>
+                    <fluent-data-grid-cell grid-column="2">
+                        <fluent-number-field size=5 min="0" max="@productInventories.Inventory.Quantity" @bind-value="productInventories.InventoryQuantity"></fluent-number-field>
+                    </fluent-data-grid-cell>
+                    <fluent-data-grid-cell grid-column="3">
+                        <fluent-button appearance="outline" @onclick="@(()=>RemoveInventory(productInventories))">Remove</fluent-button>
+                    </fluent-data-grid-cell>
+                </fluent-data-grid-row>
+            }
+        </fluent-data-grid>
+    </div>
+    
+
+
+}
+
+@code {
+    public List<ProductInventory> productInventories = new List<ProductInventory>();
+
+    private readonly IMapper mapper;
+
+    private void OnSelectInventory(ViewInventoriesByNameVM inventory)
+    {
+        if (!productInventories.Any(x => x.Inventory.InventoryName.Equals(inventory.InventoryName, StringComparison.OrdinalIgnoreCase)))
+        {
+            //var inventories = mapper.Map<Inventory>(inventory);
+            this.productInventories.Add(new ProductInventory { InventoryId = inventory.InventoryId, Inventory = ConvertViewModelToModel(inventory)});
+        }
+    }
+
+    private Inventory ConvertViewModelToModel(ViewInventoriesByNameVM vm)
+    {
+        return new Inventory()
+            {
+                InventoryName = vm.InventoryName,
+                Price = vm.Price,
+                Quantity = vm.Quantity,
+                ProductInventories = vm.ProductInventories
+            };
+    }
+
+
+    private void RemoveInventory(ProductInventory productInventory)
+    {
+        this.productInventories.Remove(productInventory);
+    }
+}

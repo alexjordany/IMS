@@ -1,0 +1,36 @@
+﻿@inject IMediator _mediator
+<div class="input-group mb-3">
+    <fluent-combobox placeholder="Select from inventory" autocomplete="both">
+        @foreach (var inv in _inventories)
+        {
+            <fluent-option @onclick="@(async() => {await SelectInventory(inv);})" @key="inv.InventoryId">@inv.InventoryName</fluent-option>
+            <fluent-divider></fluent-divider>
+        }
+    </fluent-combobox>
+</div>
+
+@code {
+    private List<ViewInventoriesByNameVM> _inventories;
+    private ViewInventoriesByNameVM? selectedInventory;
+
+    [Parameter]
+    public EventCallback<List<ViewInventoriesByNameVM>> OnSearchInventories{ get; set; }
+
+    [Parameter]
+    public EventCallback<ViewInventoriesByNameVM> OnSelectInventory { get; set; }
+
+    [Parameter]
+    public bool DisplaySearchResult { get; set; } = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var model = await _mediator.Send(new ViewInventoriesByNameQuery{ Name = "" });
+        _inventories = model;
+    }
+
+    private async Task SelectInventory(ViewInventoriesByNameVM inventory)
+    {
+        await OnSelectInventory.InvokeAsync(inventory);
+        selectedInventory = inventory;
+    }
+}

@@ -1,0 +1,59 @@
+﻿@page "/createproduct"
+@inject IMediator _mediator
+@inject NavigationManager _navigationManager
+
+<h3>Create Product</h3>
+<br />
+@if(product != null)
+{
+    <EditForm Model="product" OnValidSubmit="OnValidSubmit">
+        <FluentValidationValidator></FluentValidationValidator>
+        <ValidationSummary></ValidationSummary>
+
+        <div class="form-group">
+            <FluentTextField Size=75 Spellcheck=true Placeholder="Name" id="name" @bind-Value="product.ProductName">Product Name</FluentTextField>
+        </div>
+        <br />
+        <div class="form-group">
+            <FluentNumberField Size=75 id="qty" @bind-Value="product.Quantity">Quantity</FluentNumberField>
+        </div>
+        <br />
+        <div class="form-group">
+            <FluentNumberField Size=75 id="price" @bind-Value="product.Price">Price</FluentNumberField>
+        </div>
+        <br />
+        <ProductInventoriesComponent @ref="ProductInventoriesComponent"></ProductInventoriesComponent>
+        <br />
+        
+        <FluentButton Appearance=Appearance.Accent type="submit">Save</FluentButton>
+    </EditForm>
+    
+}
+
+
+@code {
+    private CreateProductCommand product;
+
+    private ProductInventoriesComponent ProductInventoriesComponent;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        product = new CreateProductCommand();
+    }
+
+    private async Task OnValidSubmit()
+    {
+        if(this.product != null)
+        {
+            this.ProductInventoriesComponent.productInventories.ForEach(x =>
+            {
+                x.ProductId = this.product.ProductId;
+            });
+            this.product.ProductInventories = this.ProductInventoriesComponent.productInventories;
+
+            var model = await _mediator.Send(product);
+            _navigationManager.NavigateTo("/products");
+        }
+    }
+}

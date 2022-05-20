@@ -6,12 +6,12 @@ i:{00000000-0000-0000-0000-000000000000}:src
 i:{98ce0dcc-f262-4ecc-bea2-c5dff0fc2a37}:Infrastructure
 ++IMS.Persistence
 i:{185d680d-0165-4976-9be0-acc0b7a1e74e}:IMS.Persistence
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.persistence\bin\debug\net6.0\ims.persistence.dll
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.persistence\ims.persistence.csproj
 ++Dependencias
-i:{5343637f-1399-4c5c-a1ab-1fb131732049}:>610
-i:{6a5d4ec0-620a-4704-8d80-9f025335ed65}:>612
-i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:>611
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>839
+i:{5343637f-1399-4c5c-a1ab-1fb131732049}:>397
+i:{6a5d4ec0-620a-4704-8d80-9f025335ed65}:>396
+i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:>398
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>885
 ++Repositories
 i:{5343637f-1399-4c5c-a1ab-1fb131732049}:c:\users\alexj\source\repos\ims\ims.persistence\repositories\
 ++IMSDbContext.cs
@@ -43,47 +43,47 @@ i:{5343637f-1399-4c5c-a1ab-1fb131732049}:c:\users\alexj\source\repos\ims\ims.per
 ++ProductRepository.cs
 i:{5343637f-1399-4c5c-a1ab-1fb131732049}:c:\users\alexj\source\repos\ims\ims.persistence\repositories\productrepository.cs
 ++Microsoft.AspNetCore.App.Analyzers
-i:{5343637f-1399-4c5c-a1ab-1fb131732049}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
-i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{5343637f-1399-4c5c-a1ab-1fb131732049}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.5\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.5\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.5\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
 ++Microsoft.AspNetCore.App.CodeFixes
-i:{5343637f-1399-4c5c-a1ab-1fb131732049}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
-i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{5343637f-1399-4c5c-a1ab-1fb131732049}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.5\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.5\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.5\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
 ++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
-i:{5343637f-1399-4c5c-a1ab-1fb131732049}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
-i:{6a5d4ec0-620a-4704-8d80-9f025335ed65}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
-i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{5343637f-1399-4c5c-a1ab-1fb131732049}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{6a5d4ec0-620a-4704-8d80-9f025335ed65}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
 ++Microsoft.CodeAnalysis.NetAnalyzers
-i:{5343637f-1399-4c5c-a1ab-1fb131732049}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
-i:{6a5d4ec0-620a-4704-8d80-9f025335ed65}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
-i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{5343637f-1399-4c5c-a1ab-1fb131732049}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{6a5d4ec0-620a-4704-8d80-9f025335ed65}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
 ++Microsoft.EntityFrameworkCore.Analyzers
 i:{5343637f-1399-4c5c-a1ab-1fb131732049}:c:\users\alexj\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.2\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
 i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.2\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
 ++Microsoft.Extensions.Logging.Generators
-i:{5343637f-1399-4c5c-a1ab-1fb131732049}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
-i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{5343637f-1399-4c5c-a1ab-1fb131732049}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.5\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.5\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.5\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
 ++System.Text.Json.SourceGeneration
-i:{5343637f-1399-4c5c-a1ab-1fb131732049}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
-i:{6a5d4ec0-620a-4704-8d80-9f025335ed65}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
-i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{5343637f-1399-4c5c-a1ab-1fb131732049}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.5\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{6a5d4ec0-620a-4704-8d80-9f025335ed65}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.5\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.5\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.5\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
 ++Microsoft.NETCore.App
 i:{5343637f-1399-4c5c-a1ab-1fb131732049}:c:\users\alexj\source\repos\ims\ims.persistence\microsoft.netcore.app
 i:{6a5d4ec0-620a-4704-8d80-9f025335ed65}:c:\users\alexj\source\repos\ims\ims.domain\microsoft.netcore.app
 i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.application\microsoft.netcore.app
 i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\microsoft.netcore.app
 ++Microsoft.EntityFrameworkCore (6.0.2)
-i:{5343637f-1399-4c5c-a1ab-1fb131732049}:>848
+i:{5343637f-1399-4c5c-a1ab-1fb131732049}:>908
 ++Microsoft.EntityFrameworkCore.InMemory (6.0.2)
-i:{5343637f-1399-4c5c-a1ab-1fb131732049}:>850
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>899
+i:{5343637f-1399-4c5c-a1ab-1fb131732049}:>910
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>935
 ++Microsoft.Extensions.Configuration.Abstractions (6.0.0)
-i:{5343637f-1399-4c5c-a1ab-1fb131732049}:>849
+i:{5343637f-1399-4c5c-a1ab-1fb131732049}:>909
 ++IMS.Application
 i:{5343637f-1399-4c5c-a1ab-1fb131732049}:c:\users\alexj\source\repos\ims\ims.application\ims.application.csproj
 i:{3ccf9d50-b142-4f9f-b6cb-112c988877d0}:IMS.Application
@@ -91,13 +91,15 @@ i:{3ccf9d50-b142-4f9f-b6cb-112c988877d0}:IMS.Application
 i:{98ce0dcc-f262-4ecc-bea2-c5dff0fc2a37}:Core
 ++IMS.Domain
 i:{3ccf9d50-b142-4f9f-b6cb-112c988877d0}:IMS.Domain
-i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.domain\bin\debug\net6.0\ims.domain.dll
+i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.domain\ims.domain.csproj
 ++Entities
 i:{6a5d4ec0-620a-4704-8d80-9f025335ed65}:c:\users\alexj\source\repos\ims\ims.domain\entities\
 ++Inventory.cs
 i:{6a5d4ec0-620a-4704-8d80-9f025335ed65}:c:\users\alexj\source\repos\ims\ims.domain\entities\inventory.cs
 ++Product.cs
 i:{6a5d4ec0-620a-4704-8d80-9f025335ed65}:c:\users\alexj\source\repos\ims\ims.domain\entities\product.cs
+++ProductInventory.cs
+i:{6a5d4ec0-620a-4704-8d80-9f025335ed65}:c:\users\alexj\source\repos\ims\ims.domain\entities\productinventory.cs
 ++Contracts
 i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.application\contracts\
 ++Exceptions
@@ -115,19 +117,19 @@ i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.app
 i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.application\features\inventories\commands\
 i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\pages\inventories\commands\
 i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\pages\products\commands\
+++CreateProduct
+i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.application\features\products\commands\createproduct\
+++CreateProductCommand.cs
+i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.application\features\products\commands\createproduct\createproductcommand.cs
+++CreateProductCommandHandler.cs
+i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.application\features\products\commands\createproduct\createproductcommandhandler.cs
+++CreateProductCommandValidator.cs
+i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.application\features\products\commands\createproduct\createproductcommandvalidator.cs
 ++Queries
 i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.application\features\products\queries\
 i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.application\features\inventories\queries\
 i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\pages\inventories\queries\
 i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\pages\products\queries\
-++GetProductsByName
-i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.application\features\products\queries\getproductsbyname\
-++GetProductsByNameQuery.cs
-i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.application\features\products\queries\getproductsbyname\getproductsbynamequery.cs
-++GetProductsByNameQueryHandler.cs
-i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.application\features\products\queries\getproductsbyname\getproductsbynamequeryhandler.cs
-++GetProductsByNameVM.cs
-i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.application\features\products\queries\getproductsbyname\getproductsbynamevm.cs
 ++Profiles
 i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.application\profiles\
 ++MappingProfile.cs
@@ -138,20 +140,23 @@ i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.app
 i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.application\contracts\persistence\
 ++NotFoundException.cs
 i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.application\exceptions\notfoundexception.cs
+++GetProductsByName
+i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.application\features\products\queries\getproductsbyname\
 ++AutoMapper (11.0.1)
-i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:>877
+i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:>898
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>934
 ++AutoMapper.Extensions.Microsoft.DependencyInjection (11.0.0)
-i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:>872
+i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:>894
 ++FluentValidation (10.4.0)
-i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:>876
+i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:>897
 ++FluentValidation.AspNetCore (10.4.0)
-i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:>873
+i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:>895
 ++MediatR (10.0.1)
-i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:>875
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>897
+i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:>896
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>932
 ++MediatR.Extensions.Microsoft.DependencyInjection (10.0.1)
-i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:>878
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>901
+i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:>899
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>937
 ++IAsyncRepository.cs
 i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.application\contracts\persistence\iasyncrepository.cs
 ++IInventoryRepository.cs
@@ -166,6 +171,12 @@ i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.app
 i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.application\features\inventories\queries\getinventorydetail\
 ++ViewInventoriesByName
 i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.application\features\inventories\queries\viewinventoriesbyname\
+++GetProductsByNameQuery.cs
+i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.application\features\products\queries\getproductsbyname\getproductsbynamequery.cs
+++GetProductsByNameQueryHandler.cs
+i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.application\features\products\queries\getproductsbyname\getproductsbynamequeryhandler.cs
+++GetProductsByNameVM.cs
+i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.application\features\products\queries\getproductsbyname\getproductsbynamevm.cs
 ++CreateInventoryCommand.cs
 i:{f6e37d0e-d3bd-47ac-82af-e0de8aca2179}:c:\users\alexj\source\repos\ims\ims.application\features\inventories\commands\createinventory\createinventorycommand.cs
 ++CreateInventoryCommandHandler.cs
@@ -195,7 +206,7 @@ i:{98ce0dcc-f262-4ecc-bea2-c5dff0fc2a37}:UI
 ++IMS.WebApp
 i:{038d08aa-1f71-4f8d-b13e-f6b5bff2ab23}:IMS.WebApp
 ++Connected Services 
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>840
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>886
 ++Properties
 i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\properties\
 ++wwwroot
@@ -210,10 +221,22 @@ i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.web
 ++Controls
 i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\pages\inventories\controls\
 i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\pages\products\controls\
+++InventoryItemComponent.razor
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\pages\inventories\controls\inventoryitemcomponent.razor
+++SearchInventoryComponent.razor
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\pages\inventories\controls\searchinventorycomponent.razor
+++ViewInventoriesComponent.razor
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\pages\inventories\controls\viewinventoriescomponent.razor
 ++InventoryList.razor
 i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\pages\inventories\queries\inventorylist.razor
+++CreateProduct.razor
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\pages\products\commands\createproduct.razor
 ++GetProductsComponent.razor
 i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\pages\products\controls\getproductscomponent.razor
+++ProductInventoriesComponent.razor
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\pages\products\controls\productinventoriescomponent.razor
+++ProductItemComponent.razor
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\pages\products\controls\productitemcomponent.razor
 ++ProductList.razor
 i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\pages\products\queries\productlist.razor
 ++_Host.cshtml
@@ -245,10 +268,12 @@ i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.web
 i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\app.razor
 ++appsettings.json
 i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\appsettings.json
+++libman.json
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\libman.json
 ++Program.cs
 i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\program.cs
 ++SQL Server Express LocalDB (local) (ConnectionStrings:DefaultConnection)
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>912
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>969
 ++launchSettings.json
 i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\properties\launchsettings.json
 ++serviceDependencies.json
@@ -272,8 +297,6 @@ i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.web
 i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\pages\inventories\commands\createinventory.razor
 ++UpdateInventory.razor
 i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\pages\inventories\commands\updateinventory.razor
-++ViewInventoriesComponent.razor
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\pages\inventories\controls\viewinventoriescomponent.razor
 ++Error.cshtml.cs
 i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\pages\error.cshtml.cs
 ++MainLayout.razor.css
@@ -283,31 +306,31 @@ i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.web
 ++appsettings.Development.json
 i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\appsettings.development.json
 ++Microsoft.AspNetCore.Analyzers
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
 ++Microsoft.AspNetCore.Components.Analyzers
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
 ++Microsoft.AspNetCore.Mvc.Analyzers
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
 ++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
 ++Microsoft.NET.Sdk.Razor.SourceGenerators
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\program files\dotnet\sdk\6.0.203\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
 ++Microsoft.AspNetCore.App
 i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\microsoft.aspnetcore.app
 ++Blazored.FluentValidation (2.0.3)
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>894
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>928
 ++Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore (6.0.2)
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>896
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>931
 ++Microsoft.AspNetCore.Identity.EntityFrameworkCore (6.0.2)
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>898
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>933
 ++Microsoft.AspNetCore.Identity.UI (6.0.2)
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>902
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>938
 ++Microsoft.EntityFrameworkCore.SqlServer (6.0.2)
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>895
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>929
 ++Microsoft.EntityFrameworkCore.Tools (6.0.2)
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>900
-++Microsoft.Fast.Components.FluentUI (1.2.1)
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>913
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>936
+++Microsoft.Fast.Components.FluentUI (1.3.0)
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>930
 ++serviceDependencies.local.json
 i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\properties\servicedependencies.local.json
 ++bootstrap
@@ -356,354 +379,11 @@ i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.web
 i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\wwwroot\css\open-iconic\font\fonts\open-iconic.ttf
 ++open-iconic.woff
 i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\wwwroot\css\open-iconic\font\fonts\open-iconic.woff
-++web-components.min.js
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\wwwroot\fluentui\web-components\dist\web-components.min.js
-++libman.json
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\libman.json
-++fluentui
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\wwwroot\fluentui\
-++web-components
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\wwwroot\fluentui\web-components\
-++dist
-i:{16414c50-9809-4c7f-8894-83f8c56b9374}:c:\users\alexj\source\repos\ims\ims.webapp\wwwroot\fluentui\web-components\dist\
-++public
-++esm
-++favicon.png
-++switches.ts
-++accordion
-++anchor
-++accordion-item
-++accordion.stories.js
-++accordion.styles.js
-++accordion.vscode.definition.json
-++index.js
-++anchor.stories.js
-++anchor.styles.js
-++accordion-item.styles.js
-++accordion-item.vscode.definition.json
-++anchor.vscode.definition.json
-++anchored-region
-++anchored-region.stories.js
-++anchored-region.styles.js
-++anchored-region.vscode.definition.json
-++badge
-++badge.stories.js
-++badge.styles.js
-++badge.vscode.definition.json
-++color
-++recipes
-++utilities
-++contrast-and-delta-swatch-set.js
-++contrast-swatch.js
-++delta-swatch.js
-++delta-swatch-set.js
-++focus-stroke.js
-++base-layer-luminance.js
-++binary-search.js
-++color-constants.js
-++direction-by-is-dark.js
-++is-dark.js
-++relative-luminance.js
-++foreground-on-accent.js
-++gradient-shadow-stroke.js
-++gradient-swatch.js
-++neutral-layer-1.js
-++neutral-layer-2.js
-++neutral-layer-3.js
-++neutral-layer-4.js
-++neutral-layer-floating.js
-++underline-stroke.js
-++palette.js
-++recipe.js
-++swatch.js
-++breadcrumb
-++breadcrumb.stories.js
-++breadcrumb.styles.js
-++breadcrumb.vscode.definition.json
-++styles
-++patterns
-++direction.js
-++elevation.js
-++size.js
-++button.styles.js
-++input.styles.js
-++behaviors.js
-++breadcrumb-item
-++breadcrumb-item.stories.js
-++breadcrumb-item.styles.js
-++breadcrumb-item.vscode.definition.json
-++button
-++button.stories.js
-++button.vscode.definition.json
-++calendar
-++calendar.stories.js
-++calendar.styles.js
-++card
-++card.stories.js
-++card.styles.js
-++card.vscode.definition.json
-++checkbox
-++checkbox.stories.js
-++checkbox.styles.js
-++checkbox.vscode.definition.json
-++combobox
-++combobox.stories.js
-++combobox.styles.js
-++combobox.vscode.definition.json
-++data-grid
-++data-grid.stories.js
-++data-grid.styles.js
-++data-grid.vscode.definition.json
-++data-grid-cell.styles.js
-++data-grid-cell.vscode.definition.json
-++data-grid-row.styles.js
-++data-grid-row.vscode.definition.json
-++dialog
-++dialog.stories.js
-++dialog.styles.js
-++dialog.vscode.definition.json
-++divider
-++divider.stories.js
-++divider.styles.js
-++divider.vscode.definition.json
-++flipper
-++flipper.stories.js
-++flipper.styles.js
-++flipper.vscode.definition.json
-++component-definitions.js
-++custom-elements.js
-++design-tokens.js
-++fluent-design-system.js
-++horizontal-scroll
-++horizontal-scroll.stories.js
-++horizontal-scroll.styles.js
-++horizontal-scroll.vscode.definition.json
-++design-system-provider
-++design-system-provider.vscode.definition.json
-++listbox
-++listbox.stories.js
-++listbox.styles.js
-++listbox.vscode.definition.json
-++index-rollup.js
-++listbox-option
-++listbox-option.stories.js
-++listbox-option.styles.js
-++listbox-option.vscode.definition.json
-++menu
-++menu.stories.js
-++menu.styles.js
-++menu.vscode.definition.json
-++menu-item
-++menu-item.stories.js
-++menu-item.styles.js
-++menu-item.vscode.definition.json
-++number-field
-++number-field.stories.js
-++number-field.styles.js
-++number-field.vscode.definition.json
-++progress
-++progress-ring
-++progress.stories.js
-++progress.styles.js
-++progress.vscode.definition.json
-++progress-ring.stories.js
-++progress-ring.styles.js
-++progress-ring.vscode.definition.json
-++radio
-++radio.stories.js
-++radio.styles.js
-++radio.vscode.definition.json
-++radio-group
-++radio-group.stories.js
-++radio-group.styles.js
-++radio-group.vscode.definition.json
-++search
-++search.stories.js
-++search.styles.js
-++search.template.js
-++search.vscode.definition.json
-++select
-++select.stories.js
-++select.styles.js
-++select.vscode.definition.json
-++skeleton
-++skeleton.stories.js
-++skeleton.styles.js
-++skeleton.vscode.definition.json
-++slider
-++slider.stories.js
-++slider.styles.js
-++slider-label
-++slider-label.stories.js
-++slider-label.styles.js
-++slider-label.vscode.definition.json
-++switch
-++switch.stories.js
-++switch.styles.js
-++switch.vscode.definition.json
-++tabs
-++tab
-++tab-panel
-++tabs.stories.js
-++tabs.styles.js
-++tab.styles.js
-++tab.vscode.definition.json
-++tab-panel.styles.js
-++tab-panel.vscode.definition.json
-++slider.vscode.definition.json
-++tabs.vscode.definition.json
-++text-area
-++text-area.stories.js
-++text-area.styles.js
-++text-area.vscode.definition.json
-++text-field
-++text-field.stories.js
-++text-field.styles.js
-++text-field.vscode.definition.json
-++toolbar
-++toolbar.stories.js
-++toolbar.styles.js
-++tooltip
-++tooltip.stories.js
-++tooltip.styles.js
-++tooltip.vscode.definition.json
-++tree-item
-++tree-item.stories.js
-++tree-item.styles.js
-++tree-item.vscode.definition.json
-++tree-view
-++tree-view.stories.js
-++tree-view.styles.js
-++tree-view.vscode.definition.json
-++dts
-++component-definitions.d.ts
-++custom-elements.d.ts
-++design-tokens.d.ts
-++accordion.stories.d.ts
-++accordion.styles.d.ts
-++index.d.ts
-++anchor.stories.d.ts
-++anchor.styles.d.ts
-++anchored-region.stories.d.ts
-++anchored-region.styles.d.ts
-++badge.stories.d.ts
-++badge.styles.d.ts
-++breadcrumb.stories.d.ts
-++breadcrumb.styles.d.ts
-++breadcrumb-item.stories.d.ts
-++breadcrumb-item.styles.d.ts
-++button.stories.d.ts
-++button.styles.d.ts
-++calendar.stories.d.ts
-++calendar.styles.d.ts
-++card.stories.d.ts
-++card.styles.d.ts
-++checkbox.stories.d.ts
-++checkbox.styles.d.ts
-++palette.d.ts
-++recipe.d.ts
-++swatch.d.ts
-++combobox.stories.d.ts
-++combobox.styles.d.ts
-++data-grid.stories.d.ts
-++data-grid.styles.d.ts
-++data-grid-cell.styles.d.ts
-++data-grid-row.styles.d.ts
-++direction.d.ts
-++elevation.d.ts
-++size.d.ts
-++behaviors.d.ts
-++accordion-item.styles.d.ts
-++contrast-and-delta-swatch-set.d.ts
-++contrast-swatch.d.ts
-++delta-swatch.d.ts
-++delta-swatch-set.d.ts
-++focus-stroke.d.ts
-++foreground-on-accent.d.ts
-++gradient-shadow-stroke.d.ts
-++gradient-swatch.d.ts
-++neutral-layer-1.d.ts
-++neutral-layer-2.d.ts
-++neutral-layer-3.d.ts
-++neutral-layer-4.d.ts
-++neutral-layer-floating.d.ts
-++underline-stroke.d.ts
-++base-layer-luminance.d.ts
-++binary-search.d.ts
-++color-constants.d.ts
-++direction-by-is-dark.d.ts
-++is-dark.d.ts
-++relative-luminance.d.ts
-++input.styles.d.ts
-++fluent-web-components.api.json
-++tsdoc-metadata.json
-++web-components.js
-++fluent-design-system.d.ts
-++switch.stories.d.ts
-++switch.styles.d.ts
-++tabs.stories.d.ts
-++tabs.styles.d.ts
-++tab.styles.d.ts
-++tab-panel.styles.d.ts
-++text-area.stories.d.ts
-++text-area.styles.d.ts
-++text-field.stories.d.ts
-++text-field.styles.d.ts
-++toolbar.stories.d.ts
-++toolbar.styles.d.ts
-++tooltip.stories.d.ts
-++tooltip.styles.d.ts
-++tree-item.stories.d.ts
-++tree-item.styles.d.ts
-++tree-view.stories.d.ts
-++tree-view.styles.d.ts
-++web-components.d.ts
-++build
-++clean.js
-++transform-fragments.js
-++CHANGELOG.json
-++docs
-++api-report.md
-++CHANGELOG.md
-++dialog.stories.d.ts
-++dialog.styles.d.ts
-++divider.stories.d.ts
-++divider.styles.d.ts
-++flipper.stories.d.ts
-++flipper.styles.d.ts
-++horizontal-scroll.stories.d.ts
-++horizontal-scroll.styles.d.ts
-++index-rollup.d.ts
-++listbox.stories.d.ts
-++listbox.styles.d.ts
-++karma.conf.js
-++package.json
-++listbox-option.stories.d.ts
-++listbox-option.styles.d.ts
-++menu.stories.d.ts
-++menu.styles.d.ts
-++rollup.config.js
-++storybook-typings.d.ts
-++menu-item.stories.d.ts
-++menu-item.styles.d.ts
-++number-field.stories.d.ts
-++number-field.styles.d.ts
-++progress.stories.d.ts
-++progress.styles.d.ts
-++progress-ring.stories.d.ts
-++progress-ring.styles.d.ts
-++radio.stories.d.ts
-++radio.styles.d.ts
-++radio-group.stories.d.ts
-++radio-group.styles.d.ts
-++search.stories.d.ts
-++search.styles.d.ts
-++search.template.d.ts
-++select.stories.d.ts
-++select.styles.d.ts
-++skeleton.stories.d.ts
-++skeleton.styles.d.ts
-++slider.stories.d.ts
-++slider.styles.d.ts
-++slider-label.stories.d.ts
-++slider-label.styles.d.ts
+++Secrets.json (local)
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>972
+++Se detectó la dependencia Secrets.json (local)
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>973
+++SignalR
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>970
+++La aplicación usa SignalR. Para los entornos cuya escala debe modificarse, se recomienda agregar una dependencia de Azure SignalR Service.
+i:{16414c50-9809-4c7f-8894-83f8c56b9374}:>971

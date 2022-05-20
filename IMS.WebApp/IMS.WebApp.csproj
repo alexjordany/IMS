@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
     <PackageReference Include="Blazored.FluentValidation" Version="2.0.3" />
     <PackageReference Include="MediatR" Version="10.0.1" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
@@ -22,10 +23,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\IMS.Persistence\IMS.Persistence.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Pages\Products\Commands\" />
   </ItemGroup>
 
 </Project>
