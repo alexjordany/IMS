@@ -12,4 +12,5 @@ public class CreateProductCommandValidator :AbstractValidator<CreateProductComma
 
         RuleFor(p => p.Quantity).GreaterThan(0).WithMessage("Quantity must be greater or equal to 0");
     }
+
 }
