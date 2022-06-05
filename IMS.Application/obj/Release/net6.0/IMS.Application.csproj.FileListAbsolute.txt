@@ -1,0 +1,15 @@
+C:\Users\alexj\source\repos\IMS\IMS.Application\bin\Release\net6.0\IMS.Application.deps.json
+C:\Users\alexj\source\repos\IMS\IMS.Application\bin\Release\net6.0\IMS.Application.dll
+C:\Users\alexj\source\repos\IMS\IMS.Application\bin\Release\net6.0\IMS.Application.pdb
+C:\Users\alexj\source\repos\IMS\IMS.Application\bin\Release\net6.0\IMS.Domain.dll
+C:\Users\alexj\source\repos\IMS\IMS.Application\bin\Release\net6.0\IMS.Domain.pdb
+C:\Users\alexj\source\repos\IMS\IMS.Application\obj\Release\net6.0\IMS.Application.csproj.AssemblyReference.cache
+C:\Users\alexj\source\repos\IMS\IMS.Application\obj\Release\net6.0\IMS.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexj\source\repos\IMS\IMS.Application\obj\Release\net6.0\IMS.Application.AssemblyInfoInputs.cache
+C:\Users\alexj\source\repos\IMS\IMS.Application\obj\Release\net6.0\IMS.Application.AssemblyInfo.cs
+C:\Users\alexj\source\repos\IMS\IMS.Application\obj\Release\net6.0\IMS.Application.csproj.CoreCompileInputs.cache
+C:\Users\alexj\source\repos\IMS\IMS.Application\obj\Release\net6.0\IMS.Application.csproj.CopyComplete
+C:\Users\alexj\source\repos\IMS\IMS.Application\obj\Release\net6.0\IMS.Application.dll
+C:\Users\alexj\source\repos\IMS\IMS.Application\obj\Release\net6.0\refint\IMS.Application.dll
+C:\Users\alexj\source\repos\IMS\IMS.Application\obj\Release\net6.0\IMS.Application.pdb
+C:\Users\alexj\source\repos\IMS\IMS.Application\obj\Release\net6.0\ref\IMS.Application.dll

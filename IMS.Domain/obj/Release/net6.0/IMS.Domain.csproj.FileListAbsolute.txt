@@ -1,0 +1,12 @@
+C:\Users\alexj\source\repos\IMS\IMS.Domain\bin\Release\net6.0\IMS.Domain.deps.json
+C:\Users\alexj\source\repos\IMS\IMS.Domain\bin\Release\net6.0\IMS.Domain.dll
+C:\Users\alexj\source\repos\IMS\IMS.Domain\bin\Release\net6.0\IMS.Domain.pdb
+C:\Users\alexj\source\repos\IMS\IMS.Domain\obj\Release\net6.0\IMS.Domain.csproj.AssemblyReference.cache
+C:\Users\alexj\source\repos\IMS\IMS.Domain\obj\Release\net6.0\IMS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexj\source\repos\IMS\IMS.Domain\obj\Release\net6.0\IMS.Domain.AssemblyInfoInputs.cache
+C:\Users\alexj\source\repos\IMS\IMS.Domain\obj\Release\net6.0\IMS.Domain.AssemblyInfo.cs
+C:\Users\alexj\source\repos\IMS\IMS.Domain\obj\Release\net6.0\IMS.Domain.csproj.CoreCompileInputs.cache
+C:\Users\alexj\source\repos\IMS\IMS.Domain\obj\Release\net6.0\IMS.Domain.dll
+C:\Users\alexj\source\repos\IMS\IMS.Domain\obj\Release\net6.0\refint\IMS.Domain.dll
+C:\Users\alexj\source\repos\IMS\IMS.Domain\obj\Release\net6.0\IMS.Domain.pdb
+C:\Users\alexj\source\repos\IMS\IMS.Domain\obj\Release\net6.0\ref\IMS.Domain.dll
