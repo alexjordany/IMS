@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5ZtjNdOdHiZMXYIwQd/soaoTcpBYEqbZ/FUFmQQUgnay2vEQnZf0IZfWuzmwybyLAQ3coMpvazuCVz/Zd4b8Rw==",
+  "dgSpecHash": "ZB1bG7g+fkdbl3vexeUEDAOHDeXO0/WN+uD3VuU7XYYPwIYJr6/UqiCB5zYs9RgRR7gkT6VruyCykTKEqkTxow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alexj\\source\\repos\\IMS\\IMS.Domain\\IMS.Domain.csproj",
+  "projectFilePath": "/Users/alexparrales/Projects/IMS/IMS.Domain/IMS.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -8,7 +8,7 @@
 
 @if (productInventories != null && productInventories.Count > 0)
 {
-    <div style="width:550px;">
+    <div style="width:550px;"  >
         <fluent-data-grid grid-template-columns="1.5fr 1fr 1fr" generate-header="none">
             <fluent-data-grid-row row-type="header">
                 <fluent-data-grid-cell grid-column="1" cell-type="columnheader">Name</fluent-data-grid-cell>
@@ -23,7 +23,8 @@
                         <fluent-number-field size=5 min="0"
                                      @bind-value="productInventories.InventoryQuantity"
                                      @bind-value:event="oninput"
-                                     @onchange="OnInventoryQtyChanged"></fluent-number-field>
+                                     @onchange="OnInventoryQtyChanged">
+                        </fluent-number-field>
                     </fluent-data-grid-cell>
                     <fluent-data-grid-cell grid-column="3">
                         <fluent-button appearance="outline" @onclick="@(()=>RemoveInventory(productInventories))">Remove</fluent-button>
@@ -38,10 +39,12 @@
 }
 
 @code {
+
     [Parameter]
     public EventCallback<List<ProductInventory>> OnInventorySelected { get; set; }
 
-    public List<ProductInventory> productInventories = new List<ProductInventory>();
+    [Parameter]
+    public List<ProductInventory> productInventories { get; set; } = new List<ProductInventory>();
 
     private async Task OnInventoryQtyChanged()
     {
@@ -63,14 +66,13 @@
     private Inventory ConvertViewModelToModel(ViewInventoriesByNameVM vm)
     {
         return new Inventory()
-            {
-                InventoryName = vm.InventoryName,
-                Price = vm.Price,
-                Quantity = vm.Quantity,
-                ProductInventories = vm.ProductInventories
-            };
+        {
+            InventoryName = vm.InventoryName,
+            Price = vm.Price,
+            Quantity = vm.Quantity,
+            ProductInventories = vm.ProductInventories
+        };
     }
-
 
     private void RemoveInventory(ProductInventory productInventory)
     {

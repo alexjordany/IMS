@@ -1,0 +1,67 @@
+﻿<Properties StartupConfiguration="{16414C50-9809-4C7F-8894-83F8C56B9374}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.src.UI.IMS.WebApp PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="IMS.WebApp/Pages/Products/Controls/ProductInventoriesComponent.razor">
+    <Files>
+      <File FileName="IMS.WebApp/Pages/Products/Commands/UpdateProduct.razor" Line="32" Column="15" />
+      <File FileName="IMS.Application/Profiles/MappingProfile.cs" Line="24" Column="1" />
+      <File FileName="IMS.WebApp/Pages/Products/Controls/ProductInventoriesComponent.razor" Line="12" Column="52" />
+      <File FileName="IMS.Application/Features/Products/Commands/CreateProduct/CreateProductCommand.cs" Line="12" Column="26" />
+      <File FileName="IMS.Application/Features/Products/Commands/CreateProduct/CreateProductCommandValidator.cs" Line="27" Column="10" />
+      <File FileName="IMS.Application/Features/Products/Commands/CreateProduct/CreateProductCommandHandler.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="IMS" expanded="True">
+            <Node name="src" expanded="True">
+              <Node name="Core" expanded="True">
+                <Node name="IMS.Application" expanded="True">
+                  <Node name="Contracts" expanded="True">
+                    <Node name="Persistence" expanded="True" />
+                  </Node>
+                  <Node name="Features" expanded="True">
+                    <Node name="Products" expanded="True">
+                      <Node name="Commands" expanded="True">
+                        <Node name="CreateProduct" expanded="True" />
+                      </Node>
+                      <Node name="Queries" expanded="True">
+                        <Node name="GetProductDetail" expanded="True" />
+                        <Node name="GetProductsByName" expanded="True" />
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node name="Profiles" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Infrastructure" expanded="True">
+                <Node name="IMS.Persistence" expanded="True">
+                  <Node name="Repositories" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="UI" expanded="True">
+                <Node name="IMS.WebApp" expanded="True">
+                  <Node name="Pages" expanded="True">
+                    <Node name="Products" expanded="True">
+                      <Node name="Commands" expanded="True" />
+                      <Node name="Controls" expanded="True" />
+                      <Node name="Queries" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

@@ -1,0 +1,63 @@
+﻿@page "/updateproduct/{productId:int}"
+@using IMS.Application.Features.Products.Queries.GetProductDetail
+@using IMS.Domain.Entities
+@inject IMediator _mediator;
+@inject NavigationManager _navigationManager
+
+<h3>Update Product</h3>
+<br />
+@if (product != null)
+{
+    <EditForm Model="product" OnValidSubmit="OnValidSubmit">
+        <FluentValidationValidator></FluentValidationValidator>
+        <DataAnnotationsValidator></DataAnnotationsValidator>
+        <ValidationSummary></ValidationSummary>
+
+        <div class="form-group">
+            <FluentTextField Size=75 Spellcheck=true Placeholder="Name" id="name" @bind-Value="product.ProductName">Product Name</FluentTextField>
+        </div>
+        <br />
+        <div class="form-group">
+            <FluentNumberField Size=75 id="qty" @bind-Value="product.Quantity">Quantity</FluentNumberField>
+        </div>
+        <br />
+        <div class="form-group">
+            <FluentNumberField Size=75 id="price" @bind-Value="product.Price">Price</FluentNumberField>
+        </div>
+        <br />
+        <div class="form-group">
+            <ProductInventoriesComponent productInventories="product.ProductInventories"
+                                         OnInventorySelected="OnInventorySelected">
+            </ProductInventoriesComponent>
+        </div>
+        <br />
+
+        <FluentButton Appearance=Appearance.Accent type="submit">Save</FluentButton>
+        <br />
+        <br />
+    </EditForm>
+}
+
+@code {
+    [Parameter]
+    public int ProductId { get; set; }
+
+    private ProductDetailVM product;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        var model = await _mediator.Send(new GetProductDetailQuery { Id = ProductId });
+        product = model;
+    }
+
+    private void OnInventorySelected(List<ProductInventory> productInventories)
+    {
+        this.product.ProductInventories = productInventories;
+    }
+
+    public async Task OnValidSubmit()
+    {
+
+    }
+}
+

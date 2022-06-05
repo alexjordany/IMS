@@ -485,38 +485,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alexj\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/alexparrales/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alexj\\source\\repos\\IMS\\IMS.Application\\IMS.Application.csproj",
+      "projectUniqueName": "/Users/alexparrales/Projects/IMS/IMS.Application/IMS.Application.csproj",
       "projectName": "IMS.Application",
-      "projectPath": "C:\\Users\\alexj\\source\\repos\\IMS\\IMS.Application\\IMS.Application.csproj",
-      "packagesPath": "C:\\Users\\alexj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alexj\\source\\repos\\IMS\\IMS.Application\\obj\\",
+      "projectPath": "/Users/alexparrales/Projects/IMS/IMS.Application/IMS.Application.csproj",
+      "packagesPath": "/Users/alexparrales/.nuget/packages/",
+      "outputPath": "/Users/alexparrales/Projects/IMS/IMS.Application/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\alexj\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/alexparrales/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\alexj\\source\\repos\\IMS\\IMS.Domain\\IMS.Domain.csproj": {
-              "projectPath": "C:\\Users\\alexj\\source\\repos\\IMS\\IMS.Domain\\IMS.Domain.csproj"
+            "/Users/alexparrales/Projects/IMS/IMS.Domain/IMS.Domain.csproj": {
+              "projectPath": "/Users/alexparrales/Projects/IMS/IMS.Domain/IMS.Domain.csproj"
             }
           }
         }
@@ -571,7 +565,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
       }
     }
   }
