@@ -44,6 +44,8 @@
 
     private ProductDetailVM product;
 
+    private UpdateProductCommand productToUpdate;
+
     protected override async Task OnParametersSetAsync()
     {
         var model = await _mediator.Send(new GetProductDetailQuery { Id = ProductId });
@@ -57,7 +59,21 @@
 
     public async Task OnValidSubmit()
     {
+        if (product != null)
+        {
+            productToUpdate = new UpdateProductCommand
+            {
+                ProductId = product.ProductId,
+                ProductName = product.ProductName,
+                Quantity = product.Quantity,
+                Price = product.Price,
+                ProductInventories = product.ProductInventories
+            };
 
+            await _mediator.Send(productToUpdate);
+
+            _navigationManager.NavigateTo("/products");
+        }
     }
 }
 

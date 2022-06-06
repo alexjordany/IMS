@@ -33,22 +33,28 @@
 
     private InventoryDetailVm inventory;
 
+    private UpdateInventoryCommand inventoryToUpdate;
+
     protected override async Task OnInitializedAsync()
     {
         var model = await _mediator.Send(new GetInventoryDetailQuery{Id = InvId});
         inventory = model;
+
     }
 
     public async Task OnValidSubmit()
     {
-        if(inventory != null)
+        if (inventory != null)
         {
-            await _mediator.Send(new UpdateInventoryCommand 
-            { InventoryId = inventory.InventoryId, InventoryName = inventory.InventoryName, Price = inventory.Price, Quantity = inventory.Quantity });
+            inventoryToUpdate = new UpdateInventoryCommand
+            { InventoryId = inventory.InventoryId, InventoryName = inventory.InventoryName, Price = inventory.Price, Quantity = inventory.Quantity };
+
+            await _mediator.Send(inventoryToUpdate);
+
             _navigationManager.NavigateTo("/inventories");
         }
-        
-            
+
+
 
     }
 }

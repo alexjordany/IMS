@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using FluentValidation;
+using IMS.Application.Features.Products.Commands.UpdateProduct;
 using IMS.Domain.Entities;
 
 namespace IMS.Application.Features.Products.Commands.CreateProduct;
