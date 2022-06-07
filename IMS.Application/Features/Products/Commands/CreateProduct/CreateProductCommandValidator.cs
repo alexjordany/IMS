@@ -12,7 +12,7 @@ public class CreateProductCommandValidator :AbstractValidator<CreateProductComma
         //Rule for Price
         When(p => p.ProductInventories == null || p.ProductInventories.Count <= 0, () =>
         {
-            RuleFor(p => p.Price).GreaterThan(7);
+            RuleFor(p => p.Price).GreaterThanOrEqualTo(0);
         }).Otherwise(() =>
         {
             RuleFor(p=> p.Price)
