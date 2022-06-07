@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using IMS.Application.Features.Inventories.Commands.CreateInventory;
+﻿using IMS.Application.Features.Inventories.Commands.CreateInventory;
 using IMS.Application.Features.Inventories.Commands.UpdateInventory;
 using IMS.Application.Features.Inventories.Queries.GetInventoryDetail;
 using IMS.Application.Features.Inventories.Queries.ViewInventoriesByName;
@@ -7,7 +6,6 @@ using IMS.Application.Features.Products.Commands.CreateProduct;
 using IMS.Application.Features.Products.Commands.UpdateProduct;
 using IMS.Application.Features.Products.Queries.GetProductDetail;
 using IMS.Application.Features.Products.Queries.GetProductsByName;
-using IMS.Domain.Entities;
 
 namespace IMS.Application.Profiles;
 

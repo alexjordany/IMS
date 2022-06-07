@@ -1,6 +1,4 @@
-﻿using MediatR;
-
-namespace IMS.Application.Features.Inventories.Commands.CreateInventory;
+﻿namespace IMS.Application.Features.Inventories.Commands.CreateInventory;
 
 public class CreateInventoryCommand : IRequest<int>
 {

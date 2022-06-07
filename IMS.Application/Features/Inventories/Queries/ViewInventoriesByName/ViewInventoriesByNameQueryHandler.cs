@@ -1,9 +1,4 @@
-﻿using AutoMapper;
-using IMS.Application.Contracts.Persistence;
-using IMS.Domain.Entities;
-using MediatR;
-
-namespace IMS.Application.Features.Inventories.Queries.ViewInventoriesByName;
+﻿namespace IMS.Application.Features.Inventories.Queries.ViewInventoriesByName;
 
 public class ViewInventoriesByNameQueryHandler :IRequestHandler<ViewInventoriesByNameQuery, List<ViewInventoriesByNameVM>>
 {

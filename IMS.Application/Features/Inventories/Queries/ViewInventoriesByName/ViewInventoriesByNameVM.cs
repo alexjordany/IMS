@@ -1,6 +1,4 @@
-﻿using IMS.Domain.Entities;
-
-namespace IMS.Application.Features.Inventories.Queries.ViewInventoriesByName
+﻿namespace IMS.Application.Features.Inventories.Queries.ViewInventoriesByName
 {
     public class ViewInventoriesByNameVM
     {

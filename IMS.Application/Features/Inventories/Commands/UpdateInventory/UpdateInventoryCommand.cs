@@ -1,6 +1,4 @@
-﻿using MediatR;
-
-namespace IMS.Application.Features.Inventories.Commands.UpdateInventory;
+﻿namespace IMS.Application.Features.Inventories.Commands.UpdateInventory;
 
 public class UpdateInventoryCommand : IRequest
 {

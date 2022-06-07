@@ -1,9 +1,4 @@
-﻿using AutoMapper;
-using IMS.Application.Contracts.Persistence;
-using IMS.Domain.Entities;
-using MediatR;
-
-namespace IMS.Application.Features.Products.Commands.UpdateProduct;
+﻿namespace IMS.Application.Features.Products.Commands.UpdateProduct;
 
 public class UpdateProductCommandHandler : IRequestHandler<UpdateProductCommand>
 {

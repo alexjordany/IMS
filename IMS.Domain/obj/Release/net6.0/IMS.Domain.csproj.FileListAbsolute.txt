@@ -10,15 +10,3 @@ C:/Users/alexj/source/repos/IMS/IMS.Domain/obj/Release/net6.0/IMS.Domain.dll
 C:/Users/alexj/source/repos/IMS/IMS.Domain/obj/Release/net6.0/refint/IMS.Domain.dll
 C:/Users/alexj/source/repos/IMS/IMS.Domain/obj/Release/net6.0/IMS.Domain.pdb
 C:/Users/alexj/source/repos/IMS/IMS.Domain/obj/Release/net6.0/ref/IMS.Domain.dll
-/Users/alexparrales/Projects/IMS/IMS.Domain/bin/Release/net6.0/IMS.Domain.deps.json
-/Users/alexparrales/Projects/IMS/IMS.Domain/bin/Release/net6.0/IMS.Domain.dll
-/Users/alexparrales/Projects/IMS/IMS.Domain/bin/Release/net6.0/IMS.Domain.pdb
-/Users/alexparrales/Projects/IMS/IMS.Domain/obj/Release/net6.0/IMS.Domain.csproj.AssemblyReference.cache
-/Users/alexparrales/Projects/IMS/IMS.Domain/obj/Release/net6.0/IMS.Domain.GeneratedMSBuildEditorConfig.editorconfig
-/Users/alexparrales/Projects/IMS/IMS.Domain/obj/Release/net6.0/IMS.Domain.AssemblyInfoInputs.cache
-/Users/alexparrales/Projects/IMS/IMS.Domain/obj/Release/net6.0/IMS.Domain.AssemblyInfo.cs
-/Users/alexparrales/Projects/IMS/IMS.Domain/obj/Release/net6.0/IMS.Domain.csproj.CoreCompileInputs.cache
-/Users/alexparrales/Projects/IMS/IMS.Domain/obj/Release/net6.0/IMS.Domain.dll
-/Users/alexparrales/Projects/IMS/IMS.Domain/obj/Release/net6.0/refint/IMS.Domain.dll
-/Users/alexparrales/Projects/IMS/IMS.Domain/obj/Release/net6.0/IMS.Domain.pdb
-/Users/alexparrales/Projects/IMS/IMS.Domain/obj/Release/net6.0/ref/IMS.Domain.dll

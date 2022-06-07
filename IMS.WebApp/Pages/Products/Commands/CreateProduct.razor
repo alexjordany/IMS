@@ -17,11 +17,11 @@
         </div>
         <br />
         <div class="form-group">
-            <FluentNumberField Size=75 id="qty" @bind-Value="product.Quantity">Quantity</FluentNumberField>
+            <FluentNumberField Size=75 id="qty" @bind-Value="product.Quantity" Min="0">Quantity</FluentNumberField>
         </div>
         <br />
         <div class="form-group">
-            <FluentNumberField Size=75 id="price" @bind-Value="product.Price">Price</FluentNumberField>
+            <FluentNumberField Size=75 id="price" @bind-Value="product.Price" Min="0">Price</FluentNumberField>
         </div>
         <br />
         <ProductInventoriesComponent 

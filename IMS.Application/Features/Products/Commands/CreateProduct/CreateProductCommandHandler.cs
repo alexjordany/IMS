@@ -1,9 +1,4 @@
-﻿using AutoMapper;
-using IMS.Application.Contracts.Persistence;
-using IMS.Domain.Entities;
-using MediatR;
-
-namespace IMS.Application.Features.Products.Commands.CreateProduct;
+﻿namespace IMS.Application.Features.Products.Commands.CreateProduct;
 
 public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand,int>
 {

@@ -1,10 +1,4 @@
-﻿using AutoMapper;
-using IMS.Application.Contracts.Persistence;
-using IMS.Application.Exceptions;
-using IMS.Domain.Entities;
-using MediatR;
-
-namespace IMS.Application.Features.Inventories.Commands.UpdateInventory;
+﻿namespace IMS.Application.Features.Inventories.Commands.UpdateInventory;
 
 public class UpdateInventoryCommandHandler : IRequestHandler<UpdateInventoryCommand>
 {

@@ -1,8 +1,4 @@
-﻿using AutoMapper;
-using IMS.Application.Contracts.Persistence;
-using MediatR;
-
-namespace IMS.Application.Features.Products.Queries.GetProductsByName
+﻿namespace IMS.Application.Features.Products.Queries.GetProductsByName
 {
     public class GetProductsByNameQueryHandler : IRequestHandler<GetProductsByNameQuery, List<GetProductsByNameVM>>
     {

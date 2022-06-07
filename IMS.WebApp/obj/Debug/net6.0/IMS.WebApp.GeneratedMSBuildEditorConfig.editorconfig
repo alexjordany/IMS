@@ -59,6 +59,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZHVjdHMvQ29tbWFuZHMvQ3JlYXRlUHJvZHVjdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/alexparrales/Projects/IMS/IMS.WebApp/Pages/Products/Commands/UpdateProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZHVjdHMvQ29tbWFuZHMvVXBkYXRlUHJvZHVjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/alexparrales/Projects/IMS/IMS.WebApp/Pages/Products/Controls/GetProductsComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZHVjdHMvQ29udHJvbHMvR2V0UHJvZHVjdHNDb21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,6 +1,4 @@
-﻿using MediatR;
-
-namespace IMS.Application.Features.Products.Queries.GetProductsByName;
+﻿namespace IMS.Application.Features.Products.Queries.GetProductsByName;
 
 public class GetProductsByNameQuery : IRequest<List<GetProductsByNameVM>>
 {

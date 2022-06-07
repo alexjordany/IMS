@@ -1,9 +1,4 @@
-﻿using AutoMapper;
-using IMS.Application.Contracts.Persistence;
-using IMS.Domain.Entities;
-using MediatR;
-
-namespace IMS.Application.Features.Inventories.Queries.GetInventoryDetail;
+﻿namespace IMS.Application.Features.Inventories.Queries.GetInventoryDetail;
 
 public class GetInventoryDetailQueryHandler : IRequestHandler<GetInventoryDetailQuery, InventoryDetailVm>
 {

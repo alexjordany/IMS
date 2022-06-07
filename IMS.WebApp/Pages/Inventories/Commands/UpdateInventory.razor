@@ -9,18 +9,16 @@
 {
     <EditForm Model="inventory" OnValidSubmit="OnValidSubmit">
         <FluentValidationValidator></FluentValidationValidator>
-        <ValidationSummary></ValidationSummary>
-
         <div class="form-group">
             <FluentTextField Size=75 Spellcheck=true  Placeholder="Name" id="name" @bind-Value="inventory.InventoryName">Name</FluentTextField>
         </div>
         <br />
         <div class="form-group">
-            <FluentNumberField Size=75 id="qty" @bind-Value="inventory.Quantity">Quantity</FluentNumberField>
+            <FluentNumberField Size=75 id="qty" @bind-Value="inventory.Quantity" Min="0">Quantity</FluentNumberField>
         </div>
         <br />
         <div class="form-group">
-            <FluentNumberField Size=75 id="price" @bind-Value="inventory.Price">Price</FluentNumberField>
+            <FluentNumberField Size=75 id="price" @bind-Value="inventory.Price" Min="0">Price</FluentNumberField>
         </div>
         <br />
         <FluentButton Appearance=Appearance.Outline type="submit">Save</FluentButton>

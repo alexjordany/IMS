@@ -1,6 +1,4 @@
-﻿using IMS.Domain.Entities;
-
-namespace IMS.Application.Features.Products.Queries.GetProductDetail;
+﻿namespace IMS.Application.Features.Products.Queries.GetProductDetail;
 
 public class ProductDetailVM
 {

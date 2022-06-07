@@ -1,6 +1,4 @@
-﻿using IMS.Domain.Entities;
-
-namespace IMS.Application.Contracts.Persistence;
+﻿namespace IMS.Application.Contracts.Persistence;
 
 public interface IInventoryRepository : IAsyncRepository<Inventory>
 {
