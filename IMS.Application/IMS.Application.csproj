@@ -23,10 +23,12 @@
     <None Remove="Features\Products\Commands\UpdateProduct\" />
     <None Remove="Features\Products\Queries\GetProductDetail\" />
     <None Remove="Common\" />
+    <None Remove="Features\Products\Commands\DeleteProduct\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\Products\Commands\UpdateProduct\" />
     <Folder Include="Features\Products\Queries\GetProductDetail\" />
     <Folder Include="Common\" />
+    <Folder Include="Features\Products\Commands\DeleteProduct\" />
   </ItemGroup>
 </Project>

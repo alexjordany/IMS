@@ -13,7 +13,10 @@ public class ProductRepository : BaseRepository<Product>, IProductRepository
 
     public async Task<IEnumerable<Product>> GetProductsByName(string name)
     {
-        var productsByName = await _dbContext.Products.Where(x => x.ProductName.Contains(name, StringComparison.OrdinalIgnoreCase) || string.IsNullOrWhiteSpace(name)).ToListAsync();
+        var productsByName = await _dbContext.Products
+            .Where(x => (x.ProductName.Contains(name, StringComparison.OrdinalIgnoreCase) ||
+            string.IsNullOrWhiteSpace(name)) &&
+            x.IsActive == true).ToListAsync();
         return productsByName;
     }
 }

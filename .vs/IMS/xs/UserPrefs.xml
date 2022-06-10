@@ -1,42 +1,19 @@
 ﻿<Properties StartupConfiguration="{16414C50-9809-4C7F-8894-83F8C56B9374}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.src.UI.IMS.WebApp PreferredExecutionTarget="/Applications/Safari.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="IMS.Application/Features/Products/Commands/CreateProduct/CreateProductCommandValidator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="IMS.Application/Features/Products/Commands/CreateProduct/CreateProductCommand.cs">
     <Files>
-      <File FileName="IMS.WebApp/Pages/Products/Commands/UpdateProduct.razor" Line="25" Column="86" />
-      <File FileName="IMS.WebApp/Pages/Inventories/Commands/UpdateInventory.razor" Line="24" Column="86" />
+      <File FileName="IMS.WebApp/Pages/Products/Commands/CreateProduct.razor" Line="59" Column="16" />
+      <File FileName="IMS.Application/Features/Products/Commands/CreateProduct/CreateProductCommand.cs" Line="1" Column="1" />
+      <File FileName="IMS.Application/Features/Products/Commands/CreateProduct/CreateProductCommandHandler.cs" Line="23" Column="1" />
+      <File FileName="IMS.Application/Features/Products/Commands/CreateProduct/CreateProductCommandValidator.cs" Line="1" Column="1" />
       <File FileName="IMS.WebApp/Pages/Products/Queries/ProductList.razor" Line="1" Column="1" />
       <File FileName="IMS.WebApp/Pages/Products/Controls/ProductItemComponent.razor" Line="1" Column="1" />
-      <File FileName="IMS.WebApp/Pages/Products/Controls/ProductInventoriesComponent.razor" Line="1" Column="1" />
-      <File FileName="IMS.WebApp/Pages/Products/Controls/GetProductsComponent.razor" Line="1" Column="1" />
-      <File FileName="IMS.Application/Profiles/MappingProfile.cs" Line="26" Column="65" />
-      <File FileName="IMS.Application/Features/Products/Commands/UpdateProduct/UpdateProductCommandValidator.cs" Line="15" Column="6" />
-      <File FileName="IMS.Application/Features/Products/Commands/CreateProduct/CreateProductCommandValidator.cs" Line="21" Column="209" />
-      <File FileName="IMS.Application/Features/Products/Queries/GetProductDetail/ProductDetailVM.cs" Line="1" Column="1" />
-      <File FileName="IMS.Application/Features/Products/Queries/GetProductsByName/GetProductsByNameQuery.cs" Line="1" Column="1" />
-      <File FileName="IMS.Application/Features/Products/Commands/UpdateProduct/UpdateProductCommand.cs" Line="10" Column="18" />
-      <File FileName="IMS.Application/Features/Products/Queries/GetProductsByName/GetProductsByNameVM.cs" Line="1" Column="1" />
-      <File FileName="IMS.Application/Features/Products/Queries/GetProductsByName/GetProductsByNameQueryHandler.cs" Line="1" Column="1" />
-      <File FileName="IMS.Application/Features/Inventories/Commands/UpdateInventory/UpdateInventoryCommandValidator.cs" Line="1" Column="1" />
-      <File FileName="IMS.Application/Features/Inventories/Commands/CreateInventory/CreateInventoryCommandValidator.cs" Line="15" Column="2" />
-      <File FileName="IMS.Persistence/Repositories/ProductRepository.cs" Line="1" Column="1" />
-      <File FileName="IMS.Domain/Entities/Product.cs" Line="10" Column="68" />
-      <File FileName="IMS.Application/Features/Products/Commands/CreateProduct/CreateProductCommand.cs" Line="18" Column="6" />
-      <File FileName="IMS.Domain/Entities/ProductInventory.cs" Line="9" Column="19" />
-      <File FileName="IMS.Application/Features/Inventories/Commands/CreateInventory/CreateInventoryCommand.cs" Line="1" Column="1" />
-      <File FileName="IMS.Application/Features/Products/Commands/CreateProduct/CreateProductCommandHandler.cs" Line="1" Column="1" />
-      <File FileName="IMS.Application/Features/Products/Commands/UpdateProduct/UpdateProductCommandHandler.cs" Line="1" Column="1" />
-      <File FileName="IMS.Application/Features/Inventories/Commands/UpdateInventory/UpdateInventoryCommand.cs" Line="1" Column="1" />
-      <File FileName="IMS.Application/Features/Inventories/Commands/UpdateInventory/UpdateInventoryCommandHandler.cs" Line="1" Column="1" />
-      <File FileName="IMS.WebApp/Pages/Products/Commands/CreateProduct.razor" Line="20" Column="87" />
-      <File FileName="IMS.Application/ApplicationServiceRegistration.cs" Line="24" Column="49" />
-      <File FileName="IMS.WebApp/Pages/Inventories/Commands/CreateInventory.razor" Line="23" Column="15" />
-      <File FileName="IMS.Application/Features/Products/Queries/GetProductDetail/GetProductDetailQuery.cs" Line="1" Column="1" />
+      <File FileName="IMS.WebApp/Pages/Inventories/Commands/CreateInventory.razor" Line="1" Column="1" />
+      <File FileName="IMS.Application/Features/Products/Commands/UpdateProduct/UpdateProductCommand.cs" Line="1" Column="1" />
+      <File FileName="IMS.Application/Features/Products/Commands/UpdateProduct/UpdateProductCommandHandler.cs" Line="21" Column="2" />
+      <File FileName="IMS.Persistence/Repositories/ProductRepository.cs" Line="21" Column="6" />
+      <File FileName="IMS.Application/Contracts/Persistence/IProductRepository.cs" Line="5" Column="63" />
+      <File FileName="IMS.Persistence/IMSDbContext.cs" Line="22" Column="148" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -49,15 +26,13 @@
                     <Node name="Persistence" expanded="True" />
                   </Node>
                   <Node name="Features" expanded="True">
-                    <Node name="Inventories" expanded="True">
-                      <Node name="Commands" expanded="True">
-                        <Node name="CreateInventory" expanded="True" />
-                        <Node name="UpdateInventory" expanded="True" />
-                      </Node>
-                    </Node>
+                    <Node name="Inventories" expanded="True" />
                     <Node name="Products" expanded="True">
                       <Node name="Commands" expanded="True">
-                        <Node name="CreateProduct" expanded="True" />
+                        <Node name="CreateProduct" expanded="True">
+                          <Node name="CreateProductCommand.cs" selected="True" />
+                        </Node>
+                        <Node name="DeleteProduct" expanded="True" />
                         <Node name="UpdateProduct" expanded="True" />
                       </Node>
                       <Node name="Queries" expanded="True">
@@ -66,20 +41,24 @@
                       </Node>
                     </Node>
                   </Node>
-                  <Node name="Profiles" expanded="True" />
                 </Node>
                 <Node name="IMS.Domain" expanded="True">
+                  <Node name="Common" expanded="True" />
                   <Node name="Entities" expanded="True" />
                 </Node>
               </Node>
               <Node name="Infrastructure" expanded="True">
-                <Node name="IMS.Persistence" expanded="True" />
+                <Node name="IMS.Persistence" expanded="True">
+                  <Node name="Repositories" expanded="True" />
+                </Node>
               </Node>
               <Node name="UI" expanded="True">
                 <Node name="IMS.WebApp" expanded="True">
                   <Node name="Pages" expanded="True">
                     <Node name="Inventories" expanded="True">
                       <Node name="Commands" expanded="True" />
+                      <Node name="Controls" expanded="True" />
+                      <Node name="Queries" expanded="True" />
                     </Node>
                     <Node name="Products" expanded="True">
                       <Node name="Commands" expanded="True" />
@@ -99,4 +78,12 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <FunctionBreakpoint line="54" column="1" function="LoadProducts" language="C#" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.src.UI.IMS.WebApp PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
 </Properties>

@@ -3,6 +3,7 @@ using IMS.Application.Features.Inventories.Commands.UpdateInventory;
 using IMS.Application.Features.Inventories.Queries.GetInventoryDetail;
 using IMS.Application.Features.Inventories.Queries.ViewInventoriesByName;
 using IMS.Application.Features.Products.Commands.CreateProduct;
+using IMS.Application.Features.Products.Commands.DeleteProduct;
 using IMS.Application.Features.Products.Commands.UpdateProduct;
 using IMS.Application.Features.Products.Queries.GetProductDetail;
 using IMS.Application.Features.Products.Queries.GetProductsByName;
@@ -22,5 +23,6 @@ public class MappingProfile : Profile
         CreateMap<Product, CreateProductCommand>().ReverseMap();
         CreateMap<Product, ProductDetailVM>().ReverseMap();
         CreateMap<Product, UpdateProductCommand>().ReverseMap();
+        CreateMap<Product, DeleteProductCommand>().ReverseMap();
     }
 }

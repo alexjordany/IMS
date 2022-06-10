@@ -11,18 +11,38 @@
             <FluentSelect Value=2 Appearance=Appearance.Accent>
                 <FluentOption>Choose an option for @Product.ProductName</FluentOption>
                 <FluentOption @onclick="@(()=> UpdateProduct(Product.ProductId))">Edit</FluentOption>
+                <FluentOption @onclick="@(()=> DeleteProduct(Product.ProductId))">Delete</FluentOption>
             </FluentSelect>
         </td>
     </FluentDataGridRow>
 }
 
 @code {
+    private DeleteProductCommand productToDelete;
 
     [Parameter]
-    public GetProductsByNameVM Product{ get; set; }
+    public GetProductsByNameVM Product { get; set; }
+
+    [Parameter]
+    public EventCallback OnProductDeleted { get; set; }
 
     private void UpdateProduct(int productId)
     {
         _navigationManager.NavigateTo($"/updateproduct/{productId}");
+    }
+
+    private async Task DeleteProduct(int productId)
+    {
+        if (Product != null)
+        {
+            productToDelete = new DeleteProductCommand
+            {
+                ProductId = Product.ProductId,
+                IsActive = false
+            };
+        }
+        await _mediator.Send(productToDelete);
+
+        await OnProductDeleted.InvokeAsync();
     }
 }

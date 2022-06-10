@@ -57,7 +57,6 @@
             {
                 x.ProductId = this.product.ProductId;
             });
-            //this.product.ProductInventories = this.ProductInventoriesComponent.productInventories;
 
             var model = await _mediator.Send(product);
             _navigationManager.NavigateTo("/products");

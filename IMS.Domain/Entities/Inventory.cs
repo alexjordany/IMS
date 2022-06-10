@@ -1,4 +1,6 @@
-﻿namespace IMS.Domain.Entities;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace IMS.Domain.Entities;
 
 public class Inventory
 {

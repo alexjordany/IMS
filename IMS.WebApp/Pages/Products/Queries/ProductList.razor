@@ -9,16 +9,16 @@
 <GetProductsComponent OnSearchProducts="OnSearchProducts"></GetProductsComponent>
 
 <FluentDataGrid TItem=string GenerateHeader=GenerateHeaderOptions.None GridTemplateColumns="1fr 0.8fr 1fr 4fr">
-    <FluentDataGridRow TItem=string RowType=DataGridRowType.Header >
+    <FluentDataGridRow TItem=string RowType=DataGridRowType.Header>
         <FluentDataGridCell GridColumn=1 CellType=DataGridCellType.ColumnHeader>Name</FluentDataGridCell>
         <FluentDataGridCell GridColumn=2 CellType=DataGridCellType.ColumnHeader>Quantity</FluentDataGridCell>
         <FluentDataGridCell GridColumn=3 CellType=DataGridCellType.ColumnHeader>Price</FluentDataGridCell>
         <FluentDataGridCell GridColumn=4 CellType=DataGridCellType.ColumnHeader>Options</FluentDataGridCell>
     </FluentDataGridRow>
     @foreach (var product in this._products)
-        {
-            <ProductItemComponent Product="product"></ProductItemComponent>
-        }
+    {
+        <ProductItemComponent Product="product" OnProductDeleted="DeleteProduct"></ProductItemComponent>
+    }
 </FluentDataGrid>
 
 <br />
@@ -30,8 +30,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        var model = await _mediator.Send(new GetProductsByNameQuery { Name = "" });
-        _products = model;
+        await LoadProducts();
     }
 
     private void OnSearchProducts(List<GetProductsByNameVM> products)
@@ -42,6 +41,17 @@
     private void CreateProduct()
     {
         _navigationManager.NavigateTo("/createproduct");
+    }
+
+    private async Task DeleteProduct()
+    {
+        await LoadProducts();
+    }
+
+    private async Task LoadProducts()
+    {
+        var model = await _mediator.Send(new GetProductsByNameQuery { Name = "" });
+        _products = model;
     }
 
 }

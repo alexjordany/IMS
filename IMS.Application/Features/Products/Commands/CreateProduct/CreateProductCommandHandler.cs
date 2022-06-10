@@ -1,4 +1,6 @@
-﻿namespace IMS.Application.Features.Products.Commands.CreateProduct;
+﻿using IMS.Application.Features.Inventories.Queries.ViewInventoriesByName;
+
+namespace IMS.Application.Features.Products.Commands.CreateProduct;
 
 public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand,int>
 {

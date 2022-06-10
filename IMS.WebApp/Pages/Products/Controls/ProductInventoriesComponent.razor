@@ -1,5 +1,7 @@
 ﻿@using IMS.Domain.Entities
 @using AutoMapper
+@using IMS.Application.Features.Products.Commands.CreateProduct;
+
 
 <div class="form-group">
     <label>Inventories</label>
@@ -8,7 +10,7 @@
 
 @if (productInventories != null && productInventories.Count > 0)
 {
-    <div style="width:550px;"  >
+    <div style="width:550px;">
         <fluent-data-grid grid-template-columns="1.5fr 1fr 1fr" generate-header="none">
             <fluent-data-grid-row row-type="header">
                 <fluent-data-grid-cell grid-column="1" cell-type="columnheader">Name</fluent-data-grid-cell>
@@ -21,9 +23,9 @@
                     <fluent-data-grid-cell grid-column="1">@productInventories.Inventory.InventoryName</fluent-data-grid-cell>
                     <fluent-data-grid-cell grid-column="2">
                         <fluent-number-field size=5 min="0"
-                                     @bind-value="productInventories.InventoryQuantity"
-                                     @bind-value:event="oninput"
-                                     @onchange="OnInventoryQtyChanged">
+                                             @bind-value="productInventories.InventoryQuantity"
+                                             @bind-value:event="oninput"
+                                             @onchange="OnInventoryQtyChanged">
                         </fluent-number-field>
                     </fluent-data-grid-cell>
                     <fluent-data-grid-cell grid-column="3">
@@ -33,7 +35,7 @@
             }
         </fluent-data-grid>
     </div>
-    
+
 
 
 }
@@ -50,8 +52,6 @@
     {
         await OnInventorySelected.InvokeAsync(this.productInventories);
     }
-
-    private readonly IMapper mapper;
 
     private async void OnSelectInventory(ViewInventoriesByNameVM inventory)
     {
